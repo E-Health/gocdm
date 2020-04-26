@@ -3,7 +3,7 @@ package api
 import (
 	"net/http"
 
-	"model/model"
+	"github.com/E-Health/gocdm/model"
 
 	"github.com/gin-gonic/gin"
 	"github.com/julienschmidt/httprouter"

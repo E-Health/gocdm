@@ -3,12 +3,16 @@ package api
 import (
 	"net/http"
 
-	"model/model"
+	"github.com/E-Health/gocdm/model"
 
 	"github.com/gin-gonic/gin"
 	"github.com/julienschmidt/httprouter"
 	"github.com/smallnest/gen/dbmeta"
 )
+
+func GetNameForTest() string {
+	return "Test Name"
+}
 
 func configConceptsRouter(router *httprouter.Router) {
 	router.GET("/concepts", GetAllConcepts)
