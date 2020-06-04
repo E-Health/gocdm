@@ -2,6 +2,11 @@ package main
 
 import (
 	"fmt"
+	"io"
+	"log"
+
+	"encoding/csv"
+	"os"
 
 	"github.com/E-Health/gocdm/api"
 	"github.com/E-Health/gocdm/model"
@@ -22,6 +27,7 @@ func init() {
 	} else {
 		fmt.Println("Init completed")
 	}
+	defer db.Close()
 
 	//Pass it to api
 	api.DB = db
@@ -73,4 +79,48 @@ func main() {
 	yob := model.Person{YearOfBirth: 2010}
 	name := api.GetNameForTest()
 	fmt.Println(yob.TableName(), name)
+}
+
+func csvToMap(reader io.Reader) []map[string]string {
+	r := csv.NewReader(reader)
+	r.Comma = '\t' // Use tab-delimited instead of comma <---- here!
+	rows := []map[string]string{}
+	var header []string
+	for {
+		record, err := r.Read()
+		if err == io.EOF {
+			break
+		}
+		if err != nil {
+			log.Fatal(err)
+		}
+		if header == nil {
+			header = record
+		} else {
+			dict := map[string]string{}
+			for i := range header {
+				dict[header[i]] = record[i]
+			}
+			rows = append(rows, dict)
+		}
+	}
+	return rows
+}
+
+func vocab(tsvPath string) {
+
+	csvFile, err := os.Open(tsvPath)
+
+	if err != nil {
+		fmt.Println(err)
+	}
+
+	defer csvFile.Close()
+
+	vocabAll := csvToMap(csvFile)
+
+	for v := range vocabAll {
+		fmt.Println(v)
+	}
+
 }
