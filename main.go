@@ -16,7 +16,7 @@ var db *gorm.DB
 func init() {
 	//open a db connection
 	var err error
-	db, err := gorm.Open("sqlite3", "/tmp/cdmtest.db")
+	db, err := gorm.Open("sqlite3", "cdmtest.db")
 	if err != nil {
 		panic("failed to connect database")
 	} else {
@@ -70,7 +70,6 @@ func main() {
 
 	// Create
 	db.Create(&model.Person{YearOfBirth: 2010})
-
 	yob := model.Person{YearOfBirth: 2010}
 	name := api.GetNameForTest()
 	fmt.Println(yob.TableName(), name)
