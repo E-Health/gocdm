@@ -20,6 +20,7 @@ func main() {
 	defer db.Close()
 
 	// Migrate the schema
+	fmt.Println("Migrating schema")
 	db.AutoMigrate(&model.AttributeDefinition{})
 	db.AutoMigrate(&model.CareSite{})
 	db.AutoMigrate(&model.CdmSource{})
