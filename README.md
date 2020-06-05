@@ -13,7 +13,16 @@ The [OHSDI](https://www.ohdsi.org/) OMOP Common Data Model allows for the system
     
 ```
 
-* see main.go
+### see *main.go* for usage examples
+
+### APIs (example for Person)
+
+GET /people
+POST /people
+GET /people/:id
+POST /people/:id
+PUT /people/:id
+DELETE /people/:id
 
 ## Contributors
 
