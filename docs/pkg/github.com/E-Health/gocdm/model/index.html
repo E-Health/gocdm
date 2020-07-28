@@ -1,0 +1,2394 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>model - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.14.2";</script>
+<script src="../../../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://localhost:8085/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://localhost:8085/pkg/">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:8085/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package model
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "github.com/E-Health/gocdm/model"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+			
+			
+			
+				
+				<dd><a href="index.html#AttributeDefinition">type AttributeDefinition</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#AttributeDefinition.TableName">func (a *AttributeDefinition) TableName() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#CareSite">type CareSite</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CareSite.TableName">func (c *CareSite) TableName() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#CdmSource">type CdmSource</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CdmSource.TableName">func (c *CdmSource) TableName() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#Concept">type Concept</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Concept.TableName">func (c *Concept) TableName() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#ConceptAncestor">type ConceptAncestor</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ConceptAncestor.TableName">func (c *ConceptAncestor) TableName() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#ConceptClass">type ConceptClass</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ConceptClass.TableName">func (c *ConceptClass) TableName() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#ConceptRelationship">type ConceptRelationship</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ConceptRelationship.TableName">func (c *ConceptRelationship) TableName() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#ConceptSynonym">type ConceptSynonym</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ConceptSynonym.TableName">func (c *ConceptSynonym) TableName() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#ConditionEra">type ConditionEra</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ConditionEra.TableName">func (c *ConditionEra) TableName() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#ConditionOccurrence">type ConditionOccurrence</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ConditionOccurrence.TableName">func (c *ConditionOccurrence) TableName() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#Cost">type Cost</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Cost.TableName">func (c *Cost) TableName() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#DeviceExposure">type DeviceExposure</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#DeviceExposure.TableName">func (d *DeviceExposure) TableName() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#Domain">type Domain</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Domain.TableName">func (d *Domain) TableName() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#DoseEra">type DoseEra</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#DoseEra.TableName">func (d *DoseEra) TableName() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#DrugEra">type DrugEra</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#DrugEra.TableName">func (d *DrugEra) TableName() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#DrugExposure">type DrugExposure</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#DrugExposure.TableName">func (d *DrugExposure) TableName() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#DrugStrength">type DrugStrength</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#DrugStrength.TableName">func (d *DrugStrength) TableName() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#FactRelationship">type FactRelationship</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FactRelationship.TableName">func (f *FactRelationship) TableName() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#Location">type Location</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Location.TableName">func (l *Location) TableName() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#LocationHistory">type LocationHistory</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#LocationHistory.TableName">func (l *LocationHistory) TableName() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#Measurement">type Measurement</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Measurement.TableName">func (m *Measurement) TableName() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#Metadatum">type Metadatum</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Metadatum.TableName">func (m *Metadatum) TableName() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#Note">type Note</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Note.TableName">func (n *Note) TableName() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#NoteNlp">type NoteNlp</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NoteNlp.TableName">func (n *NoteNlp) TableName() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#Observation">type Observation</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Observation.TableName">func (o *Observation) TableName() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#ObservationPeriod">type ObservationPeriod</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ObservationPeriod.TableName">func (o *ObservationPeriod) TableName() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#PayerPlanPeriod">type PayerPlanPeriod</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#PayerPlanPeriod.TableName">func (p *PayerPlanPeriod) TableName() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#Person">type Person</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Person.TableName">func (p *Person) TableName() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#ProcedureOccurrence">type ProcedureOccurrence</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ProcedureOccurrence.TableName">func (p *ProcedureOccurrence) TableName() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#Provider">type Provider</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Provider.TableName">func (p *Provider) TableName() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#Relationship">type Relationship</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Relationship.TableName">func (r *Relationship) TableName() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#SourceToConceptMap">type SourceToConceptMap</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#SourceToConceptMap.TableName">func (s *SourceToConceptMap) TableName() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#Speciman">type Speciman</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Speciman.TableName">func (s *Speciman) TableName() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#SurveyConduct">type SurveyConduct</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#SurveyConduct.TableName">func (s *SurveyConduct) TableName() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#VisitDetail">type VisitDetail</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#VisitDetail.TableName">func (v *VisitDetail) TableName() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#VisitOccurrence">type VisitOccurrence</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#VisitOccurrence.TableName">func (v *VisitOccurrence) TableName() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#Vocabulary">type Vocabulary</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Vocabulary.TableName">func (v *Vocabulary) TableName() string</a></dd>
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/attribute_definition.go">attribute_definition.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/care_site.go">care_site.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/cdm_source.go">cdm_source.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/concept.go">concept.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/concept_ancestor.go">concept_ancestor.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/concept_class.go">concept_class.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/concept_relationship.go">concept_relationship.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/concept_synonym.go">concept_synonym.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/condition_era.go">condition_era.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/condition_occurrence.go">condition_occurrence.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/cost.go">cost.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/device_exposure.go">device_exposure.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/domain.go">domain.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/dose_era.go">dose_era.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/drug_era.go">drug_era.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/drug_exposure.go">drug_exposure.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/drug_strength.go">drug_strength.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/fact_relationship.go">fact_relationship.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/location.go">location.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/location_history.go">location_history.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/measurement.go">measurement.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/metadatum.go">metadatum.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/note.go">note.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/note_nlp.go">note_nlp.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/observation.go">observation.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/observation_period.go">observation_period.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/payer_plan_period.go">payer_plan_period.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/person.go">person.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/procedure_occurrence.go">procedure_occurrence.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/provider.go">provider.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/relationship.go">relationship.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/source_to_concept_map.go">source_to_concept_map.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/speciman.go">speciman.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/survey_conduct.go">survey_conduct.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/visit_detail.go">visit_detail.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/visit_occurrence.go">visit_occurrence.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/vocabulary.go">vocabulary.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+		
+		
+		
+			
+			
+			<h2 id="AttributeDefinition">type <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/attribute_definition.go?s=143:693#L6">AttributeDefinition</a>
+				<a class="permalink" href="index.html#AttributeDefinition">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type AttributeDefinition struct {
+<span id="AttributeDefinition.AttributeDefinitionID"></span>    AttributeDefinitionID  <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:attribute_definition_id;primary_key&#34; json:&#34;attribute_definition_id&#34;`
+<span id="AttributeDefinition.AttributeName"></span>    AttributeName          <a href="http://localhost:8085/pkg/builtin/#string">string</a>      `gorm:&#34;column:attribute_name&#34; json:&#34;attribute_name&#34;`
+<span id="AttributeDefinition.AttributeDescription"></span>    AttributeDescription   <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:attribute_description&#34; json:&#34;attribute_description&#34;`
+<span id="AttributeDefinition.AttributeTypeConceptID"></span>    AttributeTypeConceptID <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:attribute_type_concept_id&#34; json:&#34;attribute_type_concept_id&#34;`
+<span id="AttributeDefinition.AttributeSyntax"></span>    AttributeSyntax        <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:attribute_syntax&#34; json:&#34;attribute_syntax&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="AttributeDefinition.TableName">func (*AttributeDefinition) <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/attribute_definition.go?s=756:804#L15">TableName</a>
+					<a class="permalink" href="index.html#AttributeDefinition.TableName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (a *<a href="index.html#AttributeDefinition">AttributeDefinition</a>) TableName() <a href="http://localhost:8085/pkg/builtin/#string">string</a></pre>
+				<p>
+TableName sets the insert table name for this struct type
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="CareSite">type <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/care_site.go?s=143:793#L6">CareSite</a>
+				<a class="permalink" href="index.html#CareSite">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type CareSite struct {
+<span id="CareSite.CareSiteID"></span>    CareSiteID                <a href="http://localhost:8085/pkg/builtin/#int64">int64</a>       `gorm:&#34;column:care_site_id;primary_key&#34; json:&#34;care_site_id&#34;`
+<span id="CareSite.CareSiteName"></span>    CareSiteName              <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:care_site_name&#34; json:&#34;care_site_name&#34;`
+<span id="CareSite.PlaceOfServiceConceptID"></span>    PlaceOfServiceConceptID   <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:place_of_service_concept_id&#34; json:&#34;place_of_service_concept_id&#34;`
+<span id="CareSite.LocationID"></span>    LocationID                <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:location_id&#34; json:&#34;location_id&#34;`
+<span id="CareSite.CareSiteSourceValue"></span>    CareSiteSourceValue       <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:care_site_source_value&#34; json:&#34;care_site_source_value&#34;`
+<span id="CareSite.PlaceOfServiceSourceValue"></span>    PlaceOfServiceSourceValue <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:place_of_service_source_value&#34; json:&#34;place_of_service_source_value&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="CareSite.TableName">func (*CareSite) <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/care_site.go?s=856:893#L16">TableName</a>
+					<a class="permalink" href="index.html#CareSite.TableName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#CareSite">CareSite</a>) TableName() <a href="http://localhost:8085/pkg/builtin/#string">string</a></pre>
+				<p>
+TableName sets the insert table name for this struct type
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="CdmSource">type <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/cdm_source.go?s=143:1204#L6">CdmSource</a>
+				<a class="permalink" href="index.html#CdmSource">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type CdmSource struct {
+<span id="CdmSource.CdmSourceName"></span>    CdmSourceName                <a href="http://localhost:8085/pkg/builtin/#string">string</a>      `gorm:&#34;column:cdm_source_name;primary_key&#34; json:&#34;cdm_source_name&#34;`
+<span id="CdmSource.CdmSourceAbbreviation"></span>    CdmSourceAbbreviation        <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:cdm_source_abbreviation&#34; json:&#34;cdm_source_abbreviation&#34;`
+<span id="CdmSource.CdmHolder"></span>    CdmHolder                    <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:cdm_holder&#34; json:&#34;cdm_holder&#34;`
+<span id="CdmSource.SourceDescription"></span>    SourceDescription            <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:source_description&#34; json:&#34;source_description&#34;`
+<span id="CdmSource.SourceDocumentationReference"></span>    SourceDocumentationReference <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:source_documentation_reference&#34; json:&#34;source_documentation_reference&#34;`
+<span id="CdmSource.CdmEtlReference"></span>    CdmEtlReference              <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:cdm_etl_reference&#34; json:&#34;cdm_etl_reference&#34;`
+<span id="CdmSource.SourceReleaseDate"></span>    SourceReleaseDate            <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Time">Time</a>   `gorm:&#34;column:source_release_date&#34; json:&#34;source_release_date&#34;`
+<span id="CdmSource.CdmReleaseDate"></span>    CdmReleaseDate               <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Time">Time</a>   `gorm:&#34;column:cdm_release_date&#34; json:&#34;cdm_release_date&#34;`
+<span id="CdmSource.CdmVersion"></span>    CdmVersion                   <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:cdm_version&#34; json:&#34;cdm_version&#34;`
+<span id="CdmSource.VocabularyVersion"></span>    VocabularyVersion            <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:vocabulary_version&#34; json:&#34;vocabulary_version&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="CdmSource.TableName">func (*CdmSource) <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/cdm_source.go?s=1267:1305#L20">TableName</a>
+					<a class="permalink" href="index.html#CdmSource.TableName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#CdmSource">CdmSource</a>) TableName() <a href="http://localhost:8085/pkg/builtin/#string">string</a></pre>
+				<p>
+TableName sets the insert table name for this struct type
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="Concept">type <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/concept.go?s=143:982#L6">Concept</a>
+				<a class="permalink" href="index.html#Concept">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type Concept struct {
+<span id="Concept.ConceptID"></span>    ConceptID       <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:concept_id;primary_key&#34; json:&#34;concept_id&#34;`
+<span id="Concept.ConceptName"></span>    ConceptName     <a href="http://localhost:8085/pkg/builtin/#string">string</a>      `gorm:&#34;column:concept_name&#34; json:&#34;concept_name&#34;`
+<span id="Concept.DomainID"></span>    DomainID        <a href="http://localhost:8085/pkg/builtin/#string">string</a>      `gorm:&#34;column:domain_id&#34; json:&#34;domain_id&#34;`
+<span id="Concept.VocabularyID"></span>    VocabularyID    <a href="http://localhost:8085/pkg/builtin/#string">string</a>      `gorm:&#34;column:vocabulary_id&#34; json:&#34;vocabulary_id&#34;`
+<span id="Concept.ConceptClassID"></span>    ConceptClassID  <a href="http://localhost:8085/pkg/builtin/#string">string</a>      `gorm:&#34;column:concept_class_id&#34; json:&#34;concept_class_id&#34;`
+<span id="Concept.StandardConcept"></span>    StandardConcept <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:standard_concept&#34; json:&#34;standard_concept&#34;`
+<span id="Concept.ConceptCode"></span>    ConceptCode     <a href="http://localhost:8085/pkg/builtin/#string">string</a>      `gorm:&#34;column:concept_code&#34; json:&#34;concept_code&#34;`
+<span id="Concept.ValidStartDate"></span>    ValidStartDate  <a href="http://localhost:8085/pkg/time/">time</a>.<a href="http://localhost:8085/pkg/time/#Time">Time</a>   `gorm:&#34;column:valid_start_date&#34; json:&#34;valid_start_date&#34;`
+<span id="Concept.ValidEndDate"></span>    ValidEndDate    <a href="http://localhost:8085/pkg/time/">time</a>.<a href="http://localhost:8085/pkg/time/#Time">Time</a>   `gorm:&#34;column:valid_end_date&#34; json:&#34;valid_end_date&#34;`
+<span id="Concept.InvalidReason"></span>    InvalidReason   <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:invalid_reason&#34; json:&#34;invalid_reason&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="Concept.TableName">func (*Concept) <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/concept.go?s=1045:1081#L20">TableName</a>
+					<a class="permalink" href="index.html#Concept.TableName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#Concept">Concept</a>) TableName() <a href="http://localhost:8085/pkg/builtin/#string">string</a></pre>
+				<p>
+TableName sets the insert table name for this struct type
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="ConceptAncestor">type <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/concept_ancestor.go?s=143:570#L6">ConceptAncestor</a>
+				<a class="permalink" href="index.html#ConceptAncestor">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type ConceptAncestor struct {
+<span id="ConceptAncestor.AncestorConceptID"></span>    AncestorConceptID     <a href="http://localhost:8085/pkg/builtin/#int">int</a> `gorm:&#34;column:ancestor_concept_id;primary_key&#34; json:&#34;ancestor_concept_id&#34;`
+<span id="ConceptAncestor.DescendantConceptID"></span>    DescendantConceptID   <a href="http://localhost:8085/pkg/builtin/#int">int</a> `gorm:&#34;column:descendant_concept_id&#34; json:&#34;descendant_concept_id&#34;`
+<span id="ConceptAncestor.MinLevelsOfSeparation"></span>    MinLevelsOfSeparation <a href="http://localhost:8085/pkg/builtin/#int">int</a> `gorm:&#34;column:min_levels_of_separation&#34; json:&#34;min_levels_of_separation&#34;`
+<span id="ConceptAncestor.MaxLevelsOfSeparation"></span>    MaxLevelsOfSeparation <a href="http://localhost:8085/pkg/builtin/#int">int</a> `gorm:&#34;column:max_levels_of_separation&#34; json:&#34;max_levels_of_separation&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="ConceptAncestor.TableName">func (*ConceptAncestor) <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/concept_ancestor.go?s=633:677#L14">TableName</a>
+					<a class="permalink" href="index.html#ConceptAncestor.TableName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#ConceptAncestor">ConceptAncestor</a>) TableName() <a href="http://localhost:8085/pkg/builtin/#string">string</a></pre>
+				<p>
+TableName sets the insert table name for this struct type
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="ConceptClass">type <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/concept_class.go?s=143:464#L6">ConceptClass</a>
+				<a class="permalink" href="index.html#ConceptClass">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type ConceptClass struct {
+<span id="ConceptClass.ConceptClassID"></span>    ConceptClassID        <a href="http://localhost:8085/pkg/builtin/#string">string</a> `gorm:&#34;column:concept_class_id;primary_key&#34; json:&#34;concept_class_id&#34;`
+<span id="ConceptClass.ConceptClassName"></span>    ConceptClassName      <a href="http://localhost:8085/pkg/builtin/#string">string</a> `gorm:&#34;column:concept_class_name&#34; json:&#34;concept_class_name&#34;`
+<span id="ConceptClass.ConceptClassConceptID"></span>    ConceptClassConceptID <a href="http://localhost:8085/pkg/builtin/#int">int</a>    `gorm:&#34;column:concept_class_concept_id&#34; json:&#34;concept_class_concept_id&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="ConceptClass.TableName">func (*ConceptClass) <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/concept_class.go?s=527:568#L13">TableName</a>
+					<a class="permalink" href="index.html#ConceptClass.TableName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#ConceptClass">ConceptClass</a>) TableName() <a href="http://localhost:8085/pkg/builtin/#string">string</a></pre>
+				<p>
+TableName sets the insert table name for this struct type
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="ConceptRelationship">type <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/concept_relationship.go?s=143:674#L6">ConceptRelationship</a>
+				<a class="permalink" href="index.html#ConceptRelationship">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type ConceptRelationship struct {
+<span id="ConceptRelationship.ConceptID1"></span>    ConceptID1     <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:concept_id_1;primary_key&#34; json:&#34;concept_id_1&#34;`
+<span id="ConceptRelationship.ConceptID2"></span>    ConceptID2     <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:concept_id_2&#34; json:&#34;concept_id_2&#34;`
+<span id="ConceptRelationship.RelationshipID"></span>    RelationshipID <a href="http://localhost:8085/pkg/builtin/#string">string</a>      `gorm:&#34;column:relationship_id&#34; json:&#34;relationship_id&#34;`
+<span id="ConceptRelationship.ValidStartDate"></span>    ValidStartDate <a href="http://localhost:8085/pkg/time/">time</a>.<a href="http://localhost:8085/pkg/time/#Time">Time</a>   `gorm:&#34;column:valid_start_date&#34; json:&#34;valid_start_date&#34;`
+<span id="ConceptRelationship.ValidEndDate"></span>    ValidEndDate   <a href="http://localhost:8085/pkg/time/">time</a>.<a href="http://localhost:8085/pkg/time/#Time">Time</a>   `gorm:&#34;column:valid_end_date&#34; json:&#34;valid_end_date&#34;`
+<span id="ConceptRelationship.InvalidReason"></span>    InvalidReason  <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:invalid_reason&#34; json:&#34;invalid_reason&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="ConceptRelationship.TableName">func (*ConceptRelationship) <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/concept_relationship.go?s=737:785#L16">TableName</a>
+					<a class="permalink" href="index.html#ConceptRelationship.TableName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#ConceptRelationship">ConceptRelationship</a>) TableName() <a href="http://localhost:8085/pkg/builtin/#string">string</a></pre>
+				<p>
+TableName sets the insert table name for this struct type
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="ConceptSynonym">type <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/concept_synonym.go?s=143:439#L6">ConceptSynonym</a>
+				<a class="permalink" href="index.html#ConceptSynonym">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type ConceptSynonym struct {
+<span id="ConceptSynonym.ConceptID"></span>    ConceptID          <a href="http://localhost:8085/pkg/builtin/#int">int</a>    `gorm:&#34;column:concept_id;primary_key&#34; json:&#34;concept_id&#34;`
+<span id="ConceptSynonym.ConceptSynonymName"></span>    ConceptSynonymName <a href="http://localhost:8085/pkg/builtin/#string">string</a> `gorm:&#34;column:concept_synonym_name&#34; json:&#34;concept_synonym_name&#34;`
+<span id="ConceptSynonym.LanguageConceptID"></span>    LanguageConceptID  <a href="http://localhost:8085/pkg/builtin/#int">int</a>    `gorm:&#34;column:language_concept_id&#34; json:&#34;language_concept_id&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="ConceptSynonym.TableName">func (*ConceptSynonym) <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/concept_synonym.go?s=502:545#L13">TableName</a>
+					<a class="permalink" href="index.html#ConceptSynonym.TableName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#ConceptSynonym">ConceptSynonym</a>) TableName() <a href="http://localhost:8085/pkg/builtin/#string">string</a></pre>
+				<p>
+TableName sets the insert table name for this struct type
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="ConditionEra">type <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/condition_era.go?s=143:805#L6">ConditionEra</a>
+				<a class="permalink" href="index.html#ConditionEra">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type ConditionEra struct {
+<span id="ConditionEra.ConditionEraID"></span>    ConditionEraID            <a href="http://localhost:8085/pkg/builtin/#int64">int64</a>     `gorm:&#34;column:condition_era_id;primary_key&#34; json:&#34;condition_era_id&#34;`
+<span id="ConditionEra.PersonID"></span>    PersonID                  <a href="http://localhost:8085/pkg/builtin/#int64">int64</a>     `gorm:&#34;column:person_id&#34; json:&#34;person_id&#34;`
+<span id="ConditionEra.ConditionConceptID"></span>    ConditionConceptID        <a href="http://localhost:8085/pkg/builtin/#int">int</a>       `gorm:&#34;column:condition_concept_id&#34; json:&#34;condition_concept_id&#34;`
+<span id="ConditionEra.ConditionEraStartDatetime"></span>    ConditionEraStartDatetime <a href="http://localhost:8085/pkg/time/">time</a>.<a href="http://localhost:8085/pkg/time/#Time">Time</a> `gorm:&#34;column:condition_era_start_datetime&#34; json:&#34;condition_era_start_datetime&#34;`
+<span id="ConditionEra.ConditionEraEndDatetime"></span>    ConditionEraEndDatetime   <a href="http://localhost:8085/pkg/time/">time</a>.<a href="http://localhost:8085/pkg/time/#Time">Time</a> `gorm:&#34;column:condition_era_end_datetime&#34; json:&#34;condition_era_end_datetime&#34;`
+<span id="ConditionEra.ConditionOccurrenceCount"></span>    ConditionOccurrenceCount  <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>  `gorm:&#34;column:condition_occurrence_count&#34; json:&#34;condition_occurrence_count&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="ConditionEra.TableName">func (*ConditionEra) <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/condition_era.go?s=868:909#L16">TableName</a>
+					<a class="permalink" href="index.html#ConditionEra.TableName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#ConditionEra">ConditionEra</a>) TableName() <a href="http://localhost:8085/pkg/builtin/#string">string</a></pre>
+				<p>
+TableName sets the insert table name for this struct type
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="ConditionOccurrence">type <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/condition_occurrence.go?s=143:1874#L6">ConditionOccurrence</a>
+				<a class="permalink" href="index.html#ConditionOccurrence">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type ConditionOccurrence struct {
+<span id="ConditionOccurrence.ConditionOccurrenceID"></span>    ConditionOccurrenceID      <a href="http://localhost:8085/pkg/builtin/#int64">int64</a>       `gorm:&#34;column:condition_occurrence_id;primary_key&#34; json:&#34;condition_occurrence_id&#34;`
+<span id="ConditionOccurrence.PersonID"></span>    PersonID                   <a href="http://localhost:8085/pkg/builtin/#int64">int64</a>       `gorm:&#34;column:person_id&#34; json:&#34;person_id&#34;`
+<span id="ConditionOccurrence.ConditionConceptID"></span>    ConditionConceptID         <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:condition_concept_id&#34; json:&#34;condition_concept_id&#34;`
+<span id="ConditionOccurrence.ConditionStartDate"></span>    ConditionStartDate         <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Time">Time</a>   `gorm:&#34;column:condition_start_date&#34; json:&#34;condition_start_date&#34;`
+<span id="ConditionOccurrence.ConditionStartDatetime"></span>    ConditionStartDatetime     <a href="http://localhost:8085/pkg/time/">time</a>.<a href="http://localhost:8085/pkg/time/#Time">Time</a>   `gorm:&#34;column:condition_start_datetime&#34; json:&#34;condition_start_datetime&#34;`
+<span id="ConditionOccurrence.ConditionEndDate"></span>    ConditionEndDate           <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Time">Time</a>   `gorm:&#34;column:condition_end_date&#34; json:&#34;condition_end_date&#34;`
+<span id="ConditionOccurrence.ConditionEndDatetime"></span>    ConditionEndDatetime       <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Time">Time</a>   `gorm:&#34;column:condition_end_datetime&#34; json:&#34;condition_end_datetime&#34;`
+<span id="ConditionOccurrence.ConditionTypeConceptID"></span>    ConditionTypeConceptID     <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:condition_type_concept_id&#34; json:&#34;condition_type_concept_id&#34;`
+<span id="ConditionOccurrence.ConditionStatusConceptID"></span>    ConditionStatusConceptID   <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:condition_status_concept_id&#34; json:&#34;condition_status_concept_id&#34;`
+<span id="ConditionOccurrence.StopReason"></span>    StopReason                 <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:stop_reason&#34; json:&#34;stop_reason&#34;`
+<span id="ConditionOccurrence.ProviderID"></span>    ProviderID                 <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:provider_id&#34; json:&#34;provider_id&#34;`
+<span id="ConditionOccurrence.VisitOccurrenceID"></span>    VisitOccurrenceID          <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:visit_occurrence_id&#34; json:&#34;visit_occurrence_id&#34;`
+<span id="ConditionOccurrence.VisitDetailID"></span>    VisitDetailID              <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:visit_detail_id&#34; json:&#34;visit_detail_id&#34;`
+<span id="ConditionOccurrence.ConditionSourceValue"></span>    ConditionSourceValue       <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:condition_source_value&#34; json:&#34;condition_source_value&#34;`
+<span id="ConditionOccurrence.ConditionSourceConceptID"></span>    ConditionSourceConceptID   <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:condition_source_concept_id&#34; json:&#34;condition_source_concept_id&#34;`
+<span id="ConditionOccurrence.ConditionStatusSourceValue"></span>    ConditionStatusSourceValue <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:condition_status_source_value&#34; json:&#34;condition_status_source_value&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="ConditionOccurrence.TableName">func (*ConditionOccurrence) <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/condition_occurrence.go?s=1937:1985#L26">TableName</a>
+					<a class="permalink" href="index.html#ConditionOccurrence.TableName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#ConditionOccurrence">ConditionOccurrence</a>) TableName() <a href="http://localhost:8085/pkg/builtin/#string">string</a></pre>
+				<p>
+TableName sets the insert table name for this struct type
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="Cost">type <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/cost.go?s=143:1859#L6">Cost</a>
+				<a class="permalink" href="index.html#Cost">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type Cost struct {
+<span id="Cost.CostID"></span>    CostID                  <a href="http://localhost:8085/pkg/builtin/#int64">int64</a>       `gorm:&#34;column:cost_id;primary_key&#34; json:&#34;cost_id&#34;`
+<span id="Cost.PersonID"></span>    PersonID                <a href="http://localhost:8085/pkg/builtin/#int64">int64</a>       `gorm:&#34;column:person_id&#34; json:&#34;person_id&#34;`
+<span id="Cost.CostEventID"></span>    CostEventID             <a href="http://localhost:8085/pkg/builtin/#int64">int64</a>       `gorm:&#34;column:cost_event_id&#34; json:&#34;cost_event_id&#34;`
+<span id="Cost.CostEventFieldConceptID"></span>    CostEventFieldConceptID <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:cost_event_field_concept_id&#34; json:&#34;cost_event_field_concept_id&#34;`
+<span id="Cost.CostConceptID"></span>    CostConceptID           <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:cost_concept_id&#34; json:&#34;cost_concept_id&#34;`
+<span id="Cost.CostTypeConceptID"></span>    CostTypeConceptID       <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:cost_type_concept_id&#34; json:&#34;cost_type_concept_id&#34;`
+<span id="Cost.CurrencyConceptID"></span>    CurrencyConceptID       <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:currency_concept_id&#34; json:&#34;currency_concept_id&#34;`
+<span id="Cost.Cost"></span>    Cost                    <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Float">Float</a>  `gorm:&#34;column:cost&#34; json:&#34;cost&#34;`
+<span id="Cost.IncurredDate"></span>    IncurredDate            <a href="http://localhost:8085/pkg/time/">time</a>.<a href="http://localhost:8085/pkg/time/#Time">Time</a>   `gorm:&#34;column:incurred_date&#34; json:&#34;incurred_date&#34;`
+<span id="Cost.BilledDate"></span>    BilledDate              <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Time">Time</a>   `gorm:&#34;column:billed_date&#34; json:&#34;billed_date&#34;`
+<span id="Cost.PaidDate"></span>    PaidDate                <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Time">Time</a>   `gorm:&#34;column:paid_date&#34; json:&#34;paid_date&#34;`
+<span id="Cost.RevenueCodeConceptID"></span>    RevenueCodeConceptID    <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:revenue_code_concept_id&#34; json:&#34;revenue_code_concept_id&#34;`
+<span id="Cost.DrgConceptID"></span>    DrgConceptID            <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:drg_concept_id&#34; json:&#34;drg_concept_id&#34;`
+<span id="Cost.CostSourceValue"></span>    CostSourceValue         <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:cost_source_value&#34; json:&#34;cost_source_value&#34;`
+<span id="Cost.CostSourceConceptID"></span>    CostSourceConceptID     <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:cost_source_concept_id&#34; json:&#34;cost_source_concept_id&#34;`
+<span id="Cost.RevenueCodeSourceValue"></span>    RevenueCodeSourceValue  <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:revenue_code_source_value&#34; json:&#34;revenue_code_source_value&#34;`
+<span id="Cost.DrgSourceValue"></span>    DrgSourceValue          <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:drg_source_value&#34; json:&#34;drg_source_value&#34;`
+<span id="Cost.PayerPlanPeriodID"></span>    PayerPlanPeriodID       <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:payer_plan_period_id&#34; json:&#34;payer_plan_period_id&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="Cost.TableName">func (*Cost) <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/cost.go?s=1922:1955#L28">TableName</a>
+					<a class="permalink" href="index.html#Cost.TableName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#Cost">Cost</a>) TableName() <a href="http://localhost:8085/pkg/builtin/#string">string</a></pre>
+				<p>
+TableName sets the insert table name for this struct type
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="DeviceExposure">type <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/device_exposure.go?s=143:1747#L6">DeviceExposure</a>
+				<a class="permalink" href="index.html#DeviceExposure">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type DeviceExposure struct {
+<span id="DeviceExposure.DeviceExposureID"></span>    DeviceExposureID            <a href="http://localhost:8085/pkg/builtin/#int64">int64</a>       `gorm:&#34;column:device_exposure_id;primary_key&#34; json:&#34;device_exposure_id&#34;`
+<span id="DeviceExposure.PersonID"></span>    PersonID                    <a href="http://localhost:8085/pkg/builtin/#int64">int64</a>       `gorm:&#34;column:person_id&#34; json:&#34;person_id&#34;`
+<span id="DeviceExposure.DeviceConceptID"></span>    DeviceConceptID             <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:device_concept_id&#34; json:&#34;device_concept_id&#34;`
+<span id="DeviceExposure.DeviceExposureStartDate"></span>    DeviceExposureStartDate     <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Time">Time</a>   `gorm:&#34;column:device_exposure_start_date&#34; json:&#34;device_exposure_start_date&#34;`
+<span id="DeviceExposure.DeviceExposureStartDatetime"></span>    DeviceExposureStartDatetime <a href="http://localhost:8085/pkg/time/">time</a>.<a href="http://localhost:8085/pkg/time/#Time">Time</a>   `gorm:&#34;column:device_exposure_start_datetime&#34; json:&#34;device_exposure_start_datetime&#34;`
+<span id="DeviceExposure.DeviceExposureEndDate"></span>    DeviceExposureEndDate       <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Time">Time</a>   `gorm:&#34;column:device_exposure_end_date&#34; json:&#34;device_exposure_end_date&#34;`
+<span id="DeviceExposure.DeviceExposureEndDatetime"></span>    DeviceExposureEndDatetime   <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Time">Time</a>   `gorm:&#34;column:device_exposure_end_datetime&#34; json:&#34;device_exposure_end_datetime&#34;`
+<span id="DeviceExposure.DeviceTypeConceptID"></span>    DeviceTypeConceptID         <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:device_type_concept_id&#34; json:&#34;device_type_concept_id&#34;`
+<span id="DeviceExposure.UniqueDeviceID"></span>    UniqueDeviceID              <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:unique_device_id&#34; json:&#34;unique_device_id&#34;`
+<span id="DeviceExposure.Quantity"></span>    Quantity                    <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:quantity&#34; json:&#34;quantity&#34;`
+<span id="DeviceExposure.ProviderID"></span>    ProviderID                  <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:provider_id&#34; json:&#34;provider_id&#34;`
+<span id="DeviceExposure.VisitOccurrenceID"></span>    VisitOccurrenceID           <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:visit_occurrence_id&#34; json:&#34;visit_occurrence_id&#34;`
+<span id="DeviceExposure.VisitDetailID"></span>    VisitDetailID               <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:visit_detail_id&#34; json:&#34;visit_detail_id&#34;`
+<span id="DeviceExposure.DeviceSourceValue"></span>    DeviceSourceValue           <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:device_source_value&#34; json:&#34;device_source_value&#34;`
+<span id="DeviceExposure.DeviceSourceConceptID"></span>    DeviceSourceConceptID       <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:device_source_concept_id&#34; json:&#34;device_source_concept_id&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="DeviceExposure.TableName">func (*DeviceExposure) <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/device_exposure.go?s=1810:1853#L25">TableName</a>
+					<a class="permalink" href="index.html#DeviceExposure.TableName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (d *<a href="index.html#DeviceExposure">DeviceExposure</a>) TableName() <a href="http://localhost:8085/pkg/builtin/#string">string</a></pre>
+				<p>
+TableName sets the insert table name for this struct type
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="Domain">type <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/domain.go?s=143:398#L6">Domain</a>
+				<a class="permalink" href="index.html#Domain">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type Domain struct {
+<span id="Domain.DomainID"></span>    DomainID        <a href="http://localhost:8085/pkg/builtin/#string">string</a> `gorm:&#34;column:domain_id;primary_key&#34; json:&#34;domain_id&#34;`
+<span id="Domain.DomainName"></span>    DomainName      <a href="http://localhost:8085/pkg/builtin/#string">string</a> `gorm:&#34;column:domain_name&#34; json:&#34;domain_name&#34;`
+<span id="Domain.DomainConceptID"></span>    DomainConceptID <a href="http://localhost:8085/pkg/builtin/#int">int</a>    `gorm:&#34;column:domain_concept_id&#34; json:&#34;domain_concept_id&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="Domain.TableName">func (*Domain) <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/domain.go?s=461:496#L13">TableName</a>
+					<a class="permalink" href="index.html#Domain.TableName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (d *<a href="index.html#Domain">Domain</a>) TableName() <a href="http://localhost:8085/pkg/builtin/#string">string</a></pre>
+				<p>
+TableName sets the insert table name for this struct type
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="DoseEra">type <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/dose_era.go?s=143:785#L6">DoseEra</a>
+				<a class="permalink" href="index.html#DoseEra">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type DoseEra struct {
+<span id="DoseEra.DoseEraID"></span>    DoseEraID            <a href="http://localhost:8085/pkg/builtin/#int64">int64</a>     `gorm:&#34;column:dose_era_id;primary_key&#34; json:&#34;dose_era_id&#34;`
+<span id="DoseEra.PersonID"></span>    PersonID             <a href="http://localhost:8085/pkg/builtin/#int64">int64</a>     `gorm:&#34;column:person_id&#34; json:&#34;person_id&#34;`
+<span id="DoseEra.DrugConceptID"></span>    DrugConceptID        <a href="http://localhost:8085/pkg/builtin/#int">int</a>       `gorm:&#34;column:drug_concept_id&#34; json:&#34;drug_concept_id&#34;`
+<span id="DoseEra.UnitConceptID"></span>    UnitConceptID        <a href="http://localhost:8085/pkg/builtin/#int">int</a>       `gorm:&#34;column:unit_concept_id&#34; json:&#34;unit_concept_id&#34;`
+<span id="DoseEra.DoseValue"></span>    DoseValue            <a href="http://localhost:8085/pkg/builtin/#float64">float64</a>   `gorm:&#34;column:dose_value&#34; json:&#34;dose_value&#34;`
+<span id="DoseEra.DoseEraStartDatetime"></span>    DoseEraStartDatetime <a href="http://localhost:8085/pkg/time/">time</a>.<a href="http://localhost:8085/pkg/time/#Time">Time</a> `gorm:&#34;column:dose_era_start_datetime&#34; json:&#34;dose_era_start_datetime&#34;`
+<span id="DoseEra.DoseEraEndDatetime"></span>    DoseEraEndDatetime   <a href="http://localhost:8085/pkg/time/">time</a>.<a href="http://localhost:8085/pkg/time/#Time">Time</a> `gorm:&#34;column:dose_era_end_datetime&#34; json:&#34;dose_era_end_datetime&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="DoseEra.TableName">func (*DoseEra) <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/dose_era.go?s=848:884#L17">TableName</a>
+					<a class="permalink" href="index.html#DoseEra.TableName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (d *<a href="index.html#DoseEra">DoseEra</a>) TableName() <a href="http://localhost:8085/pkg/builtin/#string">string</a></pre>
+				<p>
+TableName sets the insert table name for this struct type
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="DrugEra">type <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/drug_era.go?s=143:789#L6">DrugEra</a>
+				<a class="permalink" href="index.html#DrugEra">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type DrugEra struct {
+<span id="DrugEra.DrugEraID"></span>    DrugEraID            <a href="http://localhost:8085/pkg/builtin/#int64">int64</a>     `gorm:&#34;column:drug_era_id;primary_key&#34; json:&#34;drug_era_id&#34;`
+<span id="DrugEra.PersonID"></span>    PersonID             <a href="http://localhost:8085/pkg/builtin/#int64">int64</a>     `gorm:&#34;column:person_id&#34; json:&#34;person_id&#34;`
+<span id="DrugEra.DrugConceptID"></span>    DrugConceptID        <a href="http://localhost:8085/pkg/builtin/#int">int</a>       `gorm:&#34;column:drug_concept_id&#34; json:&#34;drug_concept_id&#34;`
+<span id="DrugEra.DrugEraStartDatetime"></span>    DrugEraStartDatetime <a href="http://localhost:8085/pkg/time/">time</a>.<a href="http://localhost:8085/pkg/time/#Time">Time</a> `gorm:&#34;column:drug_era_start_datetime&#34; json:&#34;drug_era_start_datetime&#34;`
+<span id="DrugEra.DrugEraEndDatetime"></span>    DrugEraEndDatetime   <a href="http://localhost:8085/pkg/time/">time</a>.<a href="http://localhost:8085/pkg/time/#Time">Time</a> `gorm:&#34;column:drug_era_end_datetime&#34; json:&#34;drug_era_end_datetime&#34;`
+<span id="DrugEra.DrugExposureCount"></span>    DrugExposureCount    <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>  `gorm:&#34;column:drug_exposure_count&#34; json:&#34;drug_exposure_count&#34;`
+<span id="DrugEra.GapDays"></span>    GapDays              <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>  `gorm:&#34;column:gap_days&#34; json:&#34;gap_days&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="DrugEra.TableName">func (*DrugEra) <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/drug_era.go?s=852:888#L17">TableName</a>
+					<a class="permalink" href="index.html#DrugEra.TableName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (d *<a href="index.html#DrugEra">DrugEra</a>) TableName() <a href="http://localhost:8085/pkg/builtin/#string">string</a></pre>
+				<p>
+TableName sets the insert table name for this struct type
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="DrugExposure">type <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/drug_exposure.go?s=143:2389#L6">DrugExposure</a>
+				<a class="permalink" href="index.html#DrugExposure">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type DrugExposure struct {
+<span id="DrugExposure.DrugExposureID"></span>    DrugExposureID            <a href="http://localhost:8085/pkg/builtin/#int64">int64</a>       `gorm:&#34;column:drug_exposure_id;primary_key&#34; json:&#34;drug_exposure_id&#34;`
+<span id="DrugExposure.PersonID"></span>    PersonID                  <a href="http://localhost:8085/pkg/builtin/#int64">int64</a>       `gorm:&#34;column:person_id&#34; json:&#34;person_id&#34;`
+<span id="DrugExposure.DrugConceptID"></span>    DrugConceptID             <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:drug_concept_id&#34; json:&#34;drug_concept_id&#34;`
+<span id="DrugExposure.DrugExposureStartDate"></span>    DrugExposureStartDate     <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Time">Time</a>   `gorm:&#34;column:drug_exposure_start_date&#34; json:&#34;drug_exposure_start_date&#34;`
+<span id="DrugExposure.DrugExposureStartDatetime"></span>    DrugExposureStartDatetime <a href="http://localhost:8085/pkg/time/">time</a>.<a href="http://localhost:8085/pkg/time/#Time">Time</a>   `gorm:&#34;column:drug_exposure_start_datetime&#34; json:&#34;drug_exposure_start_datetime&#34;`
+<span id="DrugExposure.DrugExposureEndDate"></span>    DrugExposureEndDate       <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Time">Time</a>   `gorm:&#34;column:drug_exposure_end_date&#34; json:&#34;drug_exposure_end_date&#34;`
+<span id="DrugExposure.DrugExposureEndDatetime"></span>    DrugExposureEndDatetime   <a href="http://localhost:8085/pkg/time/">time</a>.<a href="http://localhost:8085/pkg/time/#Time">Time</a>   `gorm:&#34;column:drug_exposure_end_datetime&#34; json:&#34;drug_exposure_end_datetime&#34;`
+<span id="DrugExposure.VerbatimEndDate"></span>    VerbatimEndDate           <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Time">Time</a>   `gorm:&#34;column:verbatim_end_date&#34; json:&#34;verbatim_end_date&#34;`
+<span id="DrugExposure.DrugTypeConceptID"></span>    DrugTypeConceptID         <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:drug_type_concept_id&#34; json:&#34;drug_type_concept_id&#34;`
+<span id="DrugExposure.StopReason"></span>    StopReason                <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:stop_reason&#34; json:&#34;stop_reason&#34;`
+<span id="DrugExposure.Refills"></span>    Refills                   <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:refills&#34; json:&#34;refills&#34;`
+<span id="DrugExposure.Quantity"></span>    Quantity                  <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Float">Float</a>  `gorm:&#34;column:quantity&#34; json:&#34;quantity&#34;`
+<span id="DrugExposure.DaysSupply"></span>    DaysSupply                <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:days_supply&#34; json:&#34;days_supply&#34;`
+<span id="DrugExposure.Sig"></span>    Sig                       <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:sig&#34; json:&#34;sig&#34;`
+<span id="DrugExposure.RouteConceptID"></span>    RouteConceptID            <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:route_concept_id&#34; json:&#34;route_concept_id&#34;`
+<span id="DrugExposure.LotNumber"></span>    LotNumber                 <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:lot_number&#34; json:&#34;lot_number&#34;`
+<span id="DrugExposure.ProviderID"></span>    ProviderID                <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:provider_id&#34; json:&#34;provider_id&#34;`
+<span id="DrugExposure.VisitOccurrenceID"></span>    VisitOccurrenceID         <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:visit_occurrence_id&#34; json:&#34;visit_occurrence_id&#34;`
+<span id="DrugExposure.VisitDetailID"></span>    VisitDetailID             <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:visit_detail_id&#34; json:&#34;visit_detail_id&#34;`
+<span id="DrugExposure.DrugSourceValue"></span>    DrugSourceValue           <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:drug_source_value&#34; json:&#34;drug_source_value&#34;`
+<span id="DrugExposure.DrugSourceConceptID"></span>    DrugSourceConceptID       <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:drug_source_concept_id&#34; json:&#34;drug_source_concept_id&#34;`
+<span id="DrugExposure.RouteSourceValue"></span>    RouteSourceValue          <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:route_source_value&#34; json:&#34;route_source_value&#34;`
+<span id="DrugExposure.DoseUnitSourceValue"></span>    DoseUnitSourceValue       <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:dose_unit_source_value&#34; json:&#34;dose_unit_source_value&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="DrugExposure.TableName">func (*DrugExposure) <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/drug_exposure.go?s=2452:2493#L33">TableName</a>
+					<a class="permalink" href="index.html#DrugExposure.TableName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (d *<a href="index.html#DrugExposure">DrugExposure</a>) TableName() <a href="http://localhost:8085/pkg/builtin/#string">string</a></pre>
+				<p>
+TableName sets the insert table name for this struct type
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="DrugStrength">type <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/drug_strength.go?s=143:1351#L6">DrugStrength</a>
+				<a class="permalink" href="index.html#DrugStrength">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type DrugStrength struct {
+<span id="DrugStrength.DrugConceptID"></span>    DrugConceptID            <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:drug_concept_id;primary_key&#34; json:&#34;drug_concept_id&#34;`
+<span id="DrugStrength.IngredientConceptID"></span>    IngredientConceptID      <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:ingredient_concept_id&#34; json:&#34;ingredient_concept_id&#34;`
+<span id="DrugStrength.AmountValue"></span>    AmountValue              <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Float">Float</a>  `gorm:&#34;column:amount_value&#34; json:&#34;amount_value&#34;`
+<span id="DrugStrength.AmountUnitConceptID"></span>    AmountUnitConceptID      <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:amount_unit_concept_id&#34; json:&#34;amount_unit_concept_id&#34;`
+<span id="DrugStrength.NumeratorValue"></span>    NumeratorValue           <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Float">Float</a>  `gorm:&#34;column:numerator_value&#34; json:&#34;numerator_value&#34;`
+<span id="DrugStrength.NumeratorUnitConceptID"></span>    NumeratorUnitConceptID   <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:numerator_unit_concept_id&#34; json:&#34;numerator_unit_concept_id&#34;`
+<span id="DrugStrength.DenominatorValue"></span>    DenominatorValue         <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Float">Float</a>  `gorm:&#34;column:denominator_value&#34; json:&#34;denominator_value&#34;`
+<span id="DrugStrength.DenominatorUnitConceptID"></span>    DenominatorUnitConceptID <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:denominator_unit_concept_id&#34; json:&#34;denominator_unit_concept_id&#34;`
+<span id="DrugStrength.BoxSize"></span>    BoxSize                  <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:box_size&#34; json:&#34;box_size&#34;`
+<span id="DrugStrength.ValidStartDate"></span>    ValidStartDate           <a href="http://localhost:8085/pkg/time/">time</a>.<a href="http://localhost:8085/pkg/time/#Time">Time</a>   `gorm:&#34;column:valid_start_date&#34; json:&#34;valid_start_date&#34;`
+<span id="DrugStrength.ValidEndDate"></span>    ValidEndDate             <a href="http://localhost:8085/pkg/time/">time</a>.<a href="http://localhost:8085/pkg/time/#Time">Time</a>   `gorm:&#34;column:valid_end_date&#34; json:&#34;valid_end_date&#34;`
+<span id="DrugStrength.InvalidReason"></span>    InvalidReason            <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:invalid_reason&#34; json:&#34;invalid_reason&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="DrugStrength.TableName">func (*DrugStrength) <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/drug_strength.go?s=1414:1455#L22">TableName</a>
+					<a class="permalink" href="index.html#DrugStrength.TableName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (d *<a href="index.html#DrugStrength">DrugStrength</a>) TableName() <a href="http://localhost:8085/pkg/builtin/#string">string</a></pre>
+				<p>
+TableName sets the insert table name for this struct type
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="FactRelationship">type <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/fact_relationship.go?s=143:615#L6">FactRelationship</a>
+				<a class="permalink" href="index.html#FactRelationship">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type FactRelationship struct {
+<span id="FactRelationship.DomainConceptID1"></span>    DomainConceptID1      <a href="http://localhost:8085/pkg/builtin/#int">int</a>   `gorm:&#34;column:domain_concept_id_1;primary_key&#34; json:&#34;domain_concept_id_1&#34;`
+<span id="FactRelationship.FactID1"></span>    FactID1               <a href="http://localhost:8085/pkg/builtin/#int64">int64</a> `gorm:&#34;column:fact_id_1&#34; json:&#34;fact_id_1&#34;`
+<span id="FactRelationship.DomainConceptID2"></span>    DomainConceptID2      <a href="http://localhost:8085/pkg/builtin/#int">int</a>   `gorm:&#34;column:domain_concept_id_2&#34; json:&#34;domain_concept_id_2&#34;`
+<span id="FactRelationship.FactID2"></span>    FactID2               <a href="http://localhost:8085/pkg/builtin/#int64">int64</a> `gorm:&#34;column:fact_id_2&#34; json:&#34;fact_id_2&#34;`
+<span id="FactRelationship.RelationshipConceptID"></span>    RelationshipConceptID <a href="http://localhost:8085/pkg/builtin/#int">int</a>   `gorm:&#34;column:relationship_concept_id&#34; json:&#34;relationship_concept_id&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="FactRelationship.TableName">func (*FactRelationship) <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/fact_relationship.go?s=678:723#L15">TableName</a>
+					<a class="permalink" href="index.html#FactRelationship.TableName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f *<a href="index.html#FactRelationship">FactRelationship</a>) TableName() <a href="http://localhost:8085/pkg/builtin/#string">string</a></pre>
+				<p>
+TableName sets the insert table name for this struct type
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="Location">type <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/location.go?s=143:1001#L6">Location</a>
+				<a class="permalink" href="index.html#Location">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type Location struct {
+<span id="Location.LocationID"></span>    LocationID          <a href="http://localhost:8085/pkg/builtin/#int64">int64</a>       `gorm:&#34;column:location_id;primary_key&#34; json:&#34;location_id&#34;`
+<span id="Location.Address1"></span>    Address1            <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:address_1&#34; json:&#34;address_1&#34;`
+<span id="Location.Address2"></span>    Address2            <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:address_2&#34; json:&#34;address_2&#34;`
+<span id="Location.City"></span>    City                <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:city&#34; json:&#34;city&#34;`
+<span id="Location.State"></span>    State               <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:state&#34; json:&#34;state&#34;`
+<span id="Location.Zip"></span>    Zip                 <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:zip&#34; json:&#34;zip&#34;`
+<span id="Location.County"></span>    County              <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:county&#34; json:&#34;county&#34;`
+<span id="Location.Country"></span>    Country             <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:country&#34; json:&#34;country&#34;`
+<span id="Location.LocationSourceValue"></span>    LocationSourceValue <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:location_source_value&#34; json:&#34;location_source_value&#34;`
+<span id="Location.Latitude"></span>    Latitude            <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Float">Float</a>  `gorm:&#34;column:latitude&#34; json:&#34;latitude&#34;`
+<span id="Location.Longitude"></span>    Longitude           <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Float">Float</a>  `gorm:&#34;column:longitude&#34; json:&#34;longitude&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="Location.TableName">func (*Location) <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/location.go?s=1064:1101#L21">TableName</a>
+					<a class="permalink" href="index.html#Location.TableName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (l *<a href="index.html#Location">Location</a>) TableName() <a href="http://localhost:8085/pkg/builtin/#string">string</a></pre>
+				<p>
+TableName sets the insert table name for this struct type
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="LocationHistory">type <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/location_history.go?s=179:844#L6">LocationHistory</a>
+				<a class="permalink" href="index.html#LocationHistory">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+LocationHistory : LocationHistory
+</p>
+
+			<pre>type LocationHistory struct {
+<span id="LocationHistory.LocationHistoryID"></span>    LocationHistoryID         <a href="http://localhost:8085/pkg/builtin/#int64">int64</a>     `gorm:&#34;column:location_history_id;primary_key&#34; json:&#34;location_history_id&#34;`
+<span id="LocationHistory.LocationID"></span>    LocationID                <a href="http://localhost:8085/pkg/builtin/#int64">int64</a>     `gorm:&#34;column:location_id&#34; json:&#34;location_id&#34;`
+<span id="LocationHistory.RelationshipTypeConceptID"></span>    RelationshipTypeConceptID <a href="http://localhost:8085/pkg/builtin/#int">int</a>       `gorm:&#34;column:relationship_type_concept_id&#34; json:&#34;relationship_type_concept_id&#34;`
+<span id="LocationHistory.DomainID"></span>    DomainID                  <a href="http://localhost:8085/pkg/builtin/#string">string</a>    `gorm:&#34;column:domain_id&#34; json:&#34;domain_id&#34;`
+<span id="LocationHistory.EntityID"></span>    EntityID                  <a href="http://localhost:8085/pkg/builtin/#int64">int64</a>     `gorm:&#34;column:entity_id&#34; json:&#34;entity_id&#34;`
+<span id="LocationHistory.StartDate"></span>    StartDate                 <a href="http://localhost:8085/pkg/time/">time</a>.<a href="http://localhost:8085/pkg/time/#Time">Time</a> `gorm:&#34;column:start_date&#34; json:&#34;start_date&#34;`
+<span id="LocationHistory.EndDate"></span>    EndDate                   <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Time">Time</a> `gorm:&#34;column:end_date&#34; json:&#34;end_date&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="LocationHistory.TableName">func (*LocationHistory) <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/location_history.go?s=907:951#L17">TableName</a>
+					<a class="permalink" href="index.html#LocationHistory.TableName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (l *<a href="index.html#LocationHistory">LocationHistory</a>) TableName() <a href="http://localhost:8085/pkg/builtin/#string">string</a></pre>
+				<p>
+TableName sets the insert table name for this struct type
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="Measurement">type <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/measurement.go?s=143:2170#L6">Measurement</a>
+				<a class="permalink" href="index.html#Measurement">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type Measurement struct {
+<span id="Measurement.MeasurementID"></span>    MeasurementID              <a href="http://localhost:8085/pkg/builtin/#int64">int64</a>       `gorm:&#34;column:measurement_id;primary_key&#34; json:&#34;measurement_id&#34;`
+<span id="Measurement.PersonID"></span>    PersonID                   <a href="http://localhost:8085/pkg/builtin/#int64">int64</a>       `gorm:&#34;column:person_id&#34; json:&#34;person_id&#34;`
+<span id="Measurement.MeasurementConceptID"></span>    MeasurementConceptID       <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:measurement_concept_id&#34; json:&#34;measurement_concept_id&#34;`
+<span id="Measurement.MeasurementDate"></span>    MeasurementDate            <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Time">Time</a>   `gorm:&#34;column:measurement_date&#34; json:&#34;measurement_date&#34;`
+<span id="Measurement.MeasurementDatetime"></span>    MeasurementDatetime        <a href="http://localhost:8085/pkg/time/">time</a>.<a href="http://localhost:8085/pkg/time/#Time">Time</a>   `gorm:&#34;column:measurement_datetime&#34; json:&#34;measurement_datetime&#34;`
+<span id="Measurement.MeasurementTime"></span>    MeasurementTime            <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:measurement_time&#34; json:&#34;measurement_time&#34;`
+<span id="Measurement.MeasurementTypeConceptID"></span>    MeasurementTypeConceptID   <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:measurement_type_concept_id&#34; json:&#34;measurement_type_concept_id&#34;`
+<span id="Measurement.OperatorConceptID"></span>    OperatorConceptID          <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:operator_concept_id&#34; json:&#34;operator_concept_id&#34;`
+<span id="Measurement.ValueAsNumber"></span>    ValueAsNumber              <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Float">Float</a>  `gorm:&#34;column:value_as_number&#34; json:&#34;value_as_number&#34;`
+<span id="Measurement.ValueAsConceptID"></span>    ValueAsConceptID           <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:value_as_concept_id&#34; json:&#34;value_as_concept_id&#34;`
+<span id="Measurement.UnitConceptID"></span>    UnitConceptID              <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:unit_concept_id&#34; json:&#34;unit_concept_id&#34;`
+<span id="Measurement.RangeLow"></span>    RangeLow                   <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Float">Float</a>  `gorm:&#34;column:range_low&#34; json:&#34;range_low&#34;`
+<span id="Measurement.RangeHigh"></span>    RangeHigh                  <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Float">Float</a>  `gorm:&#34;column:range_high&#34; json:&#34;range_high&#34;`
+<span id="Measurement.ProviderID"></span>    ProviderID                 <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:provider_id&#34; json:&#34;provider_id&#34;`
+<span id="Measurement.VisitOccurrenceID"></span>    VisitOccurrenceID          <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:visit_occurrence_id&#34; json:&#34;visit_occurrence_id&#34;`
+<span id="Measurement.VisitDetailID"></span>    VisitDetailID              <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:visit_detail_id&#34; json:&#34;visit_detail_id&#34;`
+<span id="Measurement.MeasurementSourceValue"></span>    MeasurementSourceValue     <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:measurement_source_value&#34; json:&#34;measurement_source_value&#34;`
+<span id="Measurement.MeasurementSourceConceptID"></span>    MeasurementSourceConceptID <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:measurement_source_concept_id&#34; json:&#34;measurement_source_concept_id&#34;`
+<span id="Measurement.UnitSourceValue"></span>    UnitSourceValue            <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:unit_source_value&#34; json:&#34;unit_source_value&#34;`
+<span id="Measurement.ValueSourceValue"></span>    ValueSourceValue           <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:value_source_value&#34; json:&#34;value_source_value&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="Measurement.TableName">func (*Measurement) <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/measurement.go?s=2233:2273#L30">TableName</a>
+					<a class="permalink" href="index.html#Measurement.TableName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#Measurement">Measurement</a>) TableName() <a href="http://localhost:8085/pkg/builtin/#string">string</a></pre>
+				<p>
+TableName sets the insert table name for this struct type
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="Metadatum">type <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/metadatum.go?s=143:822#L6">Metadatum</a>
+				<a class="permalink" href="index.html#Metadatum">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type Metadatum struct {
+<span id="Metadatum.MetadataConceptID"></span>    MetadataConceptID     <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:metadata_concept_id;primary_key&#34; json:&#34;metadata_concept_id&#34;`
+<span id="Metadatum.MetadataTypeConceptID"></span>    MetadataTypeConceptID <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:metadata_type_concept_id&#34; json:&#34;metadata_type_concept_id&#34;`
+<span id="Metadatum.Name"></span>    Name                  <a href="http://localhost:8085/pkg/builtin/#string">string</a>      `gorm:&#34;column:name&#34; json:&#34;name&#34;`
+<span id="Metadatum.ValueAsString"></span>    ValueAsString         <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:value_as_string&#34; json:&#34;value_as_string&#34;`
+<span id="Metadatum.ValueAsConceptID"></span>    ValueAsConceptID      <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:value_as_concept_id&#34; json:&#34;value_as_concept_id&#34;`
+<span id="Metadatum.MetadataDate"></span>    MetadataDate          <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Time">Time</a>   `gorm:&#34;column:metadata_date&#34; json:&#34;metadata_date&#34;`
+<span id="Metadatum.MetadataDatetime"></span>    MetadataDatetime      <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Time">Time</a>   `gorm:&#34;column:metadata_datetime&#34; json:&#34;metadata_datetime&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="Metadatum.TableName">func (*Metadatum) <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/metadatum.go?s=885:923#L17">TableName</a>
+					<a class="permalink" href="index.html#Metadatum.TableName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#Metadatum">Metadatum</a>) TableName() <a href="http://localhost:8085/pkg/builtin/#string">string</a></pre>
+				<p>
+TableName sets the insert table name for this struct type
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="Note">type <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/note.go?s=143:1643#L6">Note</a>
+				<a class="permalink" href="index.html#Note">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type Note struct {
+<span id="Note.NoteID"></span>    NoteID                  <a href="http://localhost:8085/pkg/builtin/#int64">int64</a>       `gorm:&#34;column:note_id;primary_key&#34; json:&#34;note_id&#34;`
+<span id="Note.PersonID"></span>    PersonID                <a href="http://localhost:8085/pkg/builtin/#int64">int64</a>       `gorm:&#34;column:person_id&#34; json:&#34;person_id&#34;`
+<span id="Note.NoteEventID"></span>    NoteEventID             <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:note_event_id&#34; json:&#34;note_event_id&#34;`
+<span id="Note.NoteEventFieldConceptID"></span>    NoteEventFieldConceptID <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:note_event_field_concept_id&#34; json:&#34;note_event_field_concept_id&#34;`
+<span id="Note.NoteDate"></span>    NoteDate                <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Time">Time</a>   `gorm:&#34;column:note_date&#34; json:&#34;note_date&#34;`
+<span id="Note.NoteDatetime"></span>    NoteDatetime            <a href="http://localhost:8085/pkg/time/">time</a>.<a href="http://localhost:8085/pkg/time/#Time">Time</a>   `gorm:&#34;column:note_datetime&#34; json:&#34;note_datetime&#34;`
+<span id="Note.NoteTypeConceptID"></span>    NoteTypeConceptID       <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:note_type_concept_id&#34; json:&#34;note_type_concept_id&#34;`
+<span id="Note.NoteClassConceptID"></span>    NoteClassConceptID      <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:note_class_concept_id&#34; json:&#34;note_class_concept_id&#34;`
+<span id="Note.NoteTitle"></span>    NoteTitle               <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:note_title&#34; json:&#34;note_title&#34;`
+<span id="Note.NoteText"></span>    NoteText                <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:note_text&#34; json:&#34;note_text&#34;`
+<span id="Note.EncodingConceptID"></span>    EncodingConceptID       <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:encoding_concept_id&#34; json:&#34;encoding_concept_id&#34;`
+<span id="Note.LanguageConceptID"></span>    LanguageConceptID       <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:language_concept_id&#34; json:&#34;language_concept_id&#34;`
+<span id="Note.ProviderID"></span>    ProviderID              <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:provider_id&#34; json:&#34;provider_id&#34;`
+<span id="Note.VisitOccurrenceID"></span>    VisitOccurrenceID       <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:visit_occurrence_id&#34; json:&#34;visit_occurrence_id&#34;`
+<span id="Note.VisitDetailID"></span>    VisitDetailID           <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:visit_detail_id&#34; json:&#34;visit_detail_id&#34;`
+<span id="Note.NoteSourceValue"></span>    NoteSourceValue         <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:note_source_value&#34; json:&#34;note_source_value&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="Note.TableName">func (*Note) <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/note.go?s=1706:1739#L26">TableName</a>
+					<a class="permalink" href="index.html#Note.TableName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (n *<a href="index.html#Note">Note</a>) TableName() <a href="http://localhost:8085/pkg/builtin/#string">string</a></pre>
+				<p>
+TableName sets the insert table name for this struct type
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="NoteNlp">type <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/note_nlp.go?s=143:1386#L6">NoteNlp</a>
+				<a class="permalink" href="index.html#NoteNlp">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type NoteNlp struct {
+<span id="NoteNlp.NoteNlpID"></span>    NoteNlpID              <a href="http://localhost:8085/pkg/builtin/#int64">int64</a>       `gorm:&#34;column:note_nlp_id;primary_key&#34; json:&#34;note_nlp_id&#34;`
+<span id="NoteNlp.NoteID"></span>    NoteID                 <a href="http://localhost:8085/pkg/builtin/#int64">int64</a>       `gorm:&#34;column:note_id&#34; json:&#34;note_id&#34;`
+<span id="NoteNlp.SectionConceptID"></span>    SectionConceptID       <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:section_concept_id&#34; json:&#34;section_concept_id&#34;`
+<span id="NoteNlp.Snippet"></span>    Snippet                <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:snippet&#34; json:&#34;snippet&#34;`
+<span id="NoteNlp.Offset"></span>    Offset                 <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:offset&#34; json:&#34;offset&#34;`
+<span id="NoteNlp.LexicalVariant"></span>    LexicalVariant         <a href="http://localhost:8085/pkg/builtin/#string">string</a>      `gorm:&#34;column:lexical_variant&#34; json:&#34;lexical_variant&#34;`
+<span id="NoteNlp.NoteNlpConceptID"></span>    NoteNlpConceptID       <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:note_nlp_concept_id&#34; json:&#34;note_nlp_concept_id&#34;`
+<span id="NoteNlp.NlpSystem"></span>    NlpSystem              <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:nlp_system&#34; json:&#34;nlp_system&#34;`
+<span id="NoteNlp.NlpDate"></span>    NlpDate                <a href="http://localhost:8085/pkg/time/">time</a>.<a href="http://localhost:8085/pkg/time/#Time">Time</a>   `gorm:&#34;column:nlp_date&#34; json:&#34;nlp_date&#34;`
+<span id="NoteNlp.NlpDatetime"></span>    NlpDatetime            <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Time">Time</a>   `gorm:&#34;column:nlp_datetime&#34; json:&#34;nlp_datetime&#34;`
+<span id="NoteNlp.TermExists"></span>    TermExists             <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:term_exists&#34; json:&#34;term_exists&#34;`
+<span id="NoteNlp.TermTemporal"></span>    TermTemporal           <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:term_temporal&#34; json:&#34;term_temporal&#34;`
+<span id="NoteNlp.TermModifiers"></span>    TermModifiers          <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:term_modifiers&#34; json:&#34;term_modifiers&#34;`
+<span id="NoteNlp.NoteNlpSourceConceptID"></span>    NoteNlpSourceConceptID <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:note_nlp_source_concept_id&#34; json:&#34;note_nlp_source_concept_id&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="NoteNlp.TableName">func (*NoteNlp) <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/note_nlp.go?s=1449:1485#L24">TableName</a>
+					<a class="permalink" href="index.html#NoteNlp.TableName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (n *<a href="index.html#NoteNlp">NoteNlp</a>) TableName() <a href="http://localhost:8085/pkg/builtin/#string">string</a></pre>
+				<p>
+TableName sets the insert table name for this struct type
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="Observation">type <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/observation.go?s=143:2331#L6">Observation</a>
+				<a class="permalink" href="index.html#Observation">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type Observation struct {
+<span id="Observation.ObservationID"></span>    ObservationID              <a href="http://localhost:8085/pkg/builtin/#int64">int64</a>       `gorm:&#34;column:observation_id;primary_key&#34; json:&#34;observation_id&#34;`
+<span id="Observation.PersonID"></span>    PersonID                   <a href="http://localhost:8085/pkg/builtin/#int64">int64</a>       `gorm:&#34;column:person_id&#34; json:&#34;person_id&#34;`
+<span id="Observation.ObservationConceptID"></span>    ObservationConceptID       <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:observation_concept_id&#34; json:&#34;observation_concept_id&#34;`
+<span id="Observation.ObservationDate"></span>    ObservationDate            <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Time">Time</a>   `gorm:&#34;column:observation_date&#34; json:&#34;observation_date&#34;`
+<span id="Observation.ObservationDatetime"></span>    ObservationDatetime        <a href="http://localhost:8085/pkg/time/">time</a>.<a href="http://localhost:8085/pkg/time/#Time">Time</a>   `gorm:&#34;column:observation_datetime&#34; json:&#34;observation_datetime&#34;`
+<span id="Observation.ObservationTypeConceptID"></span>    ObservationTypeConceptID   <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:observation_type_concept_id&#34; json:&#34;observation_type_concept_id&#34;`
+<span id="Observation.ValueAsNumber"></span>    ValueAsNumber              <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Float">Float</a>  `gorm:&#34;column:value_as_number&#34; json:&#34;value_as_number&#34;`
+<span id="Observation.ValueAsString"></span>    ValueAsString              <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:value_as_string&#34; json:&#34;value_as_string&#34;`
+<span id="Observation.ValueAsConceptID"></span>    ValueAsConceptID           <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:value_as_concept_id&#34; json:&#34;value_as_concept_id&#34;`
+<span id="Observation.QualifierConceptID"></span>    QualifierConceptID         <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:qualifier_concept_id&#34; json:&#34;qualifier_concept_id&#34;`
+<span id="Observation.UnitConceptID"></span>    UnitConceptID              <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:unit_concept_id&#34; json:&#34;unit_concept_id&#34;`
+<span id="Observation.ProviderID"></span>    ProviderID                 <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:provider_id&#34; json:&#34;provider_id&#34;`
+<span id="Observation.VisitOccurrenceID"></span>    VisitOccurrenceID          <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:visit_occurrence_id&#34; json:&#34;visit_occurrence_id&#34;`
+<span id="Observation.VisitDetailID"></span>    VisitDetailID              <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:visit_detail_id&#34; json:&#34;visit_detail_id&#34;`
+<span id="Observation.ObservationSourceValue"></span>    ObservationSourceValue     <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:observation_source_value&#34; json:&#34;observation_source_value&#34;`
+<span id="Observation.ObservationSourceConceptID"></span>    ObservationSourceConceptID <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:observation_source_concept_id&#34; json:&#34;observation_source_concept_id&#34;`
+<span id="Observation.UnitSourceValue"></span>    UnitSourceValue            <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:unit_source_value&#34; json:&#34;unit_source_value&#34;`
+<span id="Observation.QualifierSourceValue"></span>    QualifierSourceValue       <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:qualifier_source_value&#34; json:&#34;qualifier_source_value&#34;`
+<span id="Observation.ObservationEventID"></span>    ObservationEventID         <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:observation_event_id&#34; json:&#34;observation_event_id&#34;`
+<span id="Observation.ObsEventFieldConceptID"></span>    ObsEventFieldConceptID     <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:obs_event_field_concept_id&#34; json:&#34;obs_event_field_concept_id&#34;`
+<span id="Observation.ValueAsDatetime"></span>    ValueAsDatetime            <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Time">Time</a>   `gorm:&#34;column:value_as_datetime&#34; json:&#34;value_as_datetime&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="Observation.TableName">func (*Observation) <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/observation.go?s=2394:2434#L31">TableName</a>
+					<a class="permalink" href="index.html#Observation.TableName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (o *<a href="index.html#Observation">Observation</a>) TableName() <a href="http://localhost:8085/pkg/builtin/#string">string</a></pre>
+				<p>
+TableName sets the insert table name for this struct type
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="ObservationPeriod">type <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/observation_period.go?s=143:719#L6">ObservationPeriod</a>
+				<a class="permalink" href="index.html#ObservationPeriod">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type ObservationPeriod struct {
+<span id="ObservationPeriod.ObservationPeriodID"></span>    ObservationPeriodID        <a href="http://localhost:8085/pkg/builtin/#int64">int64</a>     `gorm:&#34;column:observation_period_id;primary_key&#34; json:&#34;observation_period_id&#34;`
+<span id="ObservationPeriod.PersonID"></span>    PersonID                   <a href="http://localhost:8085/pkg/builtin/#int64">int64</a>     `gorm:&#34;column:person_id&#34; json:&#34;person_id&#34;`
+<span id="ObservationPeriod.ObservationPeriodStartDate"></span>    ObservationPeriodStartDate <a href="http://localhost:8085/pkg/time/">time</a>.<a href="http://localhost:8085/pkg/time/#Time">Time</a> `gorm:&#34;column:observation_period_start_date&#34; json:&#34;observation_period_start_date&#34;`
+<span id="ObservationPeriod.ObservationPeriodEndDate"></span>    ObservationPeriodEndDate   <a href="http://localhost:8085/pkg/time/">time</a>.<a href="http://localhost:8085/pkg/time/#Time">Time</a> `gorm:&#34;column:observation_period_end_date&#34; json:&#34;observation_period_end_date&#34;`
+<span id="ObservationPeriod.PeriodTypeConceptID"></span>    PeriodTypeConceptID        <a href="http://localhost:8085/pkg/builtin/#int">int</a>       `gorm:&#34;column:period_type_concept_id&#34; json:&#34;period_type_concept_id&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="ObservationPeriod.TableName">func (*ObservationPeriod) <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/observation_period.go?s=782:828#L15">TableName</a>
+					<a class="permalink" href="index.html#ObservationPeriod.TableName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (o *<a href="index.html#ObservationPeriod">ObservationPeriod</a>) TableName() <a href="http://localhost:8085/pkg/builtin/#string">string</a></pre>
+				<p>
+TableName sets the insert table name for this struct type
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="PayerPlanPeriod">type <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/payer_plan_period.go?s=143:2400#L6">PayerPlanPeriod</a>
+				<a class="permalink" href="index.html#PayerPlanPeriod">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type PayerPlanPeriod struct {
+<span id="PayerPlanPeriod.PayerPlanPeriodID"></span>    PayerPlanPeriodID         <a href="http://localhost:8085/pkg/builtin/#int64">int64</a>       `gorm:&#34;column:payer_plan_period_id;primary_key&#34; json:&#34;payer_plan_period_id&#34;`
+<span id="PayerPlanPeriod.PersonID"></span>    PersonID                  <a href="http://localhost:8085/pkg/builtin/#int64">int64</a>       `gorm:&#34;column:person_id&#34; json:&#34;person_id&#34;`
+<span id="PayerPlanPeriod.ContractPersonID"></span>    ContractPersonID          <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:contract_person_id&#34; json:&#34;contract_person_id&#34;`
+<span id="PayerPlanPeriod.PayerPlanPeriodStartDate"></span>    PayerPlanPeriodStartDate  <a href="http://localhost:8085/pkg/time/">time</a>.<a href="http://localhost:8085/pkg/time/#Time">Time</a>   `gorm:&#34;column:payer_plan_period_start_date&#34; json:&#34;payer_plan_period_start_date&#34;`
+<span id="PayerPlanPeriod.PayerPlanPeriodEndDate"></span>    PayerPlanPeriodEndDate    <a href="http://localhost:8085/pkg/time/">time</a>.<a href="http://localhost:8085/pkg/time/#Time">Time</a>   `gorm:&#34;column:payer_plan_period_end_date&#34; json:&#34;payer_plan_period_end_date&#34;`
+<span id="PayerPlanPeriod.PayerConceptID"></span>    PayerConceptID            <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:payer_concept_id&#34; json:&#34;payer_concept_id&#34;`
+<span id="PayerPlanPeriod.PlanConceptID"></span>    PlanConceptID             <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:plan_concept_id&#34; json:&#34;plan_concept_id&#34;`
+<span id="PayerPlanPeriod.ContractConceptID"></span>    ContractConceptID         <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:contract_concept_id&#34; json:&#34;contract_concept_id&#34;`
+<span id="PayerPlanPeriod.SponsorConceptID"></span>    SponsorConceptID          <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:sponsor_concept_id&#34; json:&#34;sponsor_concept_id&#34;`
+<span id="PayerPlanPeriod.StopReasonConceptID"></span>    StopReasonConceptID       <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:stop_reason_concept_id&#34; json:&#34;stop_reason_concept_id&#34;`
+<span id="PayerPlanPeriod.PayerSourceValue"></span>    PayerSourceValue          <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:payer_source_value&#34; json:&#34;payer_source_value&#34;`
+<span id="PayerPlanPeriod.PayerSourceConceptID"></span>    PayerSourceConceptID      <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:payer_source_concept_id&#34; json:&#34;payer_source_concept_id&#34;`
+<span id="PayerPlanPeriod.PlanSourceValue"></span>    PlanSourceValue           <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:plan_source_value&#34; json:&#34;plan_source_value&#34;`
+<span id="PayerPlanPeriod.PlanSourceConceptID"></span>    PlanSourceConceptID       <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:plan_source_concept_id&#34; json:&#34;plan_source_concept_id&#34;`
+<span id="PayerPlanPeriod.ContractSourceValue"></span>    ContractSourceValue       <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:contract_source_value&#34; json:&#34;contract_source_value&#34;`
+<span id="PayerPlanPeriod.ContractSourceConceptID"></span>    ContractSourceConceptID   <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:contract_source_concept_id&#34; json:&#34;contract_source_concept_id&#34;`
+<span id="PayerPlanPeriod.SponsorSourceValue"></span>    SponsorSourceValue        <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:sponsor_source_value&#34; json:&#34;sponsor_source_value&#34;`
+<span id="PayerPlanPeriod.SponsorSourceConceptID"></span>    SponsorSourceConceptID    <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:sponsor_source_concept_id&#34; json:&#34;sponsor_source_concept_id&#34;`
+<span id="PayerPlanPeriod.FamilySourceValue"></span>    FamilySourceValue         <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:family_source_value&#34; json:&#34;family_source_value&#34;`
+<span id="PayerPlanPeriod.StopReasonSourceValue"></span>    StopReasonSourceValue     <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:stop_reason_source_value&#34; json:&#34;stop_reason_source_value&#34;`
+<span id="PayerPlanPeriod.StopReasonSourceConceptID"></span>    StopReasonSourceConceptID <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:stop_reason_source_concept_id&#34; json:&#34;stop_reason_source_concept_id&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="PayerPlanPeriod.TableName">func (*PayerPlanPeriod) <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/payer_plan_period.go?s=2463:2507#L31">TableName</a>
+					<a class="permalink" href="index.html#PayerPlanPeriod.TableName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (p *<a href="index.html#PayerPlanPeriod">PayerPlanPeriod</a>) TableName() <a href="http://localhost:8085/pkg/builtin/#string">string</a></pre>
+				<p>
+TableName sets the insert table name for this struct type
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="Person">type <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/person.go?s=143:1998#L6">Person</a>
+				<a class="permalink" href="index.html#Person">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type Person struct {
+<span id="Person.PersonID"></span>    PersonID                 <a href="http://localhost:8085/pkg/builtin/#int64">int64</a>       `gorm:&#34;column:person_id;primary_key&#34; json:&#34;person_id&#34;`
+<span id="Person.GenderConceptID"></span>    GenderConceptID          <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:gender_concept_id&#34; json:&#34;gender_concept_id&#34;`
+<span id="Person.YearOfBirth"></span>    YearOfBirth              <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:year_of_birth&#34; json:&#34;year_of_birth&#34;`
+<span id="Person.MonthOfBirth"></span>    MonthOfBirth             <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:month_of_birth&#34; json:&#34;month_of_birth&#34;`
+<span id="Person.DayOfBirth"></span>    DayOfBirth               <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:day_of_birth&#34; json:&#34;day_of_birth&#34;`
+<span id="Person.BirthDatetime"></span>    BirthDatetime            <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Time">Time</a>   `gorm:&#34;column:birth_datetime&#34; json:&#34;birth_datetime&#34;`
+<span id="Person.DeathDatetime"></span>    DeathDatetime            <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Time">Time</a>   `gorm:&#34;column:death_datetime&#34; json:&#34;death_datetime&#34;`
+<span id="Person.RaceConceptID"></span>    RaceConceptID            <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:race_concept_id&#34; json:&#34;race_concept_id&#34;`
+<span id="Person.EthnicityConceptID"></span>    EthnicityConceptID       <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:ethnicity_concept_id&#34; json:&#34;ethnicity_concept_id&#34;`
+<span id="Person.LocationID"></span>    LocationID               <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:location_id&#34; json:&#34;location_id&#34;`
+<span id="Person.ProviderID"></span>    ProviderID               <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:provider_id&#34; json:&#34;provider_id&#34;`
+<span id="Person.CareSiteID"></span>    CareSiteID               <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:care_site_id&#34; json:&#34;care_site_id&#34;`
+<span id="Person.PersonSourceValue"></span>    PersonSourceValue        <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:person_source_value&#34; json:&#34;person_source_value&#34;`
+<span id="Person.GenderSourceValue"></span>    GenderSourceValue        <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:gender_source_value&#34; json:&#34;gender_source_value&#34;`
+<span id="Person.GenderSourceConceptID"></span>    GenderSourceConceptID    <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:gender_source_concept_id&#34; json:&#34;gender_source_concept_id&#34;`
+<span id="Person.RaceSourceValue"></span>    RaceSourceValue          <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:race_source_value&#34; json:&#34;race_source_value&#34;`
+<span id="Person.RaceSourceConceptID"></span>    RaceSourceConceptID      <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:race_source_concept_id&#34; json:&#34;race_source_concept_id&#34;`
+<span id="Person.EthnicitySourceValue"></span>    EthnicitySourceValue     <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:ethnicity_source_value&#34; json:&#34;ethnicity_source_value&#34;`
+<span id="Person.EthnicitySourceConceptID"></span>    EthnicitySourceConceptID <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:ethnicity_source_concept_id&#34; json:&#34;ethnicity_source_concept_id&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="Person.TableName">func (*Person) <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/person.go?s=2061:2096#L29">TableName</a>
+					<a class="permalink" href="index.html#Person.TableName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (p *<a href="index.html#Person">Person</a>) TableName() <a href="http://localhost:8085/pkg/builtin/#string">string</a></pre>
+				<p>
+TableName sets the insert table name for this struct type
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="ProcedureOccurrence">type <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/procedure_occurrence.go?s=143:1574#L6">ProcedureOccurrence</a>
+				<a class="permalink" href="index.html#ProcedureOccurrence">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type ProcedureOccurrence struct {
+<span id="ProcedureOccurrence.ProcedureOccurrenceID"></span>    ProcedureOccurrenceID    <a href="http://localhost:8085/pkg/builtin/#int64">int64</a>       `gorm:&#34;column:procedure_occurrence_id;primary_key&#34; json:&#34;procedure_occurrence_id&#34;`
+<span id="ProcedureOccurrence.PersonID"></span>    PersonID                 <a href="http://localhost:8085/pkg/builtin/#int64">int64</a>       `gorm:&#34;column:person_id&#34; json:&#34;person_id&#34;`
+<span id="ProcedureOccurrence.ProcedureConceptID"></span>    ProcedureConceptID       <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:procedure_concept_id&#34; json:&#34;procedure_concept_id&#34;`
+<span id="ProcedureOccurrence.ProcedureDate"></span>    ProcedureDate            <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Time">Time</a>   `gorm:&#34;column:procedure_date&#34; json:&#34;procedure_date&#34;`
+<span id="ProcedureOccurrence.ProcedureDatetime"></span>    ProcedureDatetime        <a href="http://localhost:8085/pkg/time/">time</a>.<a href="http://localhost:8085/pkg/time/#Time">Time</a>   `gorm:&#34;column:procedure_datetime&#34; json:&#34;procedure_datetime&#34;`
+<span id="ProcedureOccurrence.ProcedureTypeConceptID"></span>    ProcedureTypeConceptID   <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:procedure_type_concept_id&#34; json:&#34;procedure_type_concept_id&#34;`
+<span id="ProcedureOccurrence.ModifierConceptID"></span>    ModifierConceptID        <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:modifier_concept_id&#34; json:&#34;modifier_concept_id&#34;`
+<span id="ProcedureOccurrence.Quantity"></span>    Quantity                 <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:quantity&#34; json:&#34;quantity&#34;`
+<span id="ProcedureOccurrence.ProviderID"></span>    ProviderID               <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:provider_id&#34; json:&#34;provider_id&#34;`
+<span id="ProcedureOccurrence.VisitOccurrenceID"></span>    VisitOccurrenceID        <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:visit_occurrence_id&#34; json:&#34;visit_occurrence_id&#34;`
+<span id="ProcedureOccurrence.VisitDetailID"></span>    VisitDetailID            <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:visit_detail_id&#34; json:&#34;visit_detail_id&#34;`
+<span id="ProcedureOccurrence.ProcedureSourceValue"></span>    ProcedureSourceValue     <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:procedure_source_value&#34; json:&#34;procedure_source_value&#34;`
+<span id="ProcedureOccurrence.ProcedureSourceConceptID"></span>    ProcedureSourceConceptID <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:procedure_source_concept_id&#34; json:&#34;procedure_source_concept_id&#34;`
+<span id="ProcedureOccurrence.ModifierSourceValue"></span>    ModifierSourceValue      <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:modifier_source_value&#34; json:&#34;modifier_source_value&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="ProcedureOccurrence.TableName">func (*ProcedureOccurrence) <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/procedure_occurrence.go?s=1637:1685#L24">TableName</a>
+					<a class="permalink" href="index.html#ProcedureOccurrence.TableName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (p *<a href="index.html#ProcedureOccurrence">ProcedureOccurrence</a>) TableName() <a href="http://localhost:8085/pkg/builtin/#string">string</a></pre>
+				<p>
+TableName sets the insert table name for this struct type
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="Provider">type <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/provider.go?s=143:1408#L6">Provider</a>
+				<a class="permalink" href="index.html#Provider">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type Provider struct {
+<span id="Provider.ProviderID"></span>    ProviderID               <a href="http://localhost:8085/pkg/builtin/#int64">int64</a>       `gorm:&#34;column:provider_id;primary_key&#34; json:&#34;provider_id&#34;`
+<span id="Provider.ProviderName"></span>    ProviderName             <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:provider_name&#34; json:&#34;provider_name&#34;`
+<span id="Provider.NPI"></span>    NPI                      <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:NPI&#34; json:&#34;NPI&#34;`
+<span id="Provider.DEA"></span>    DEA                      <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:DEA&#34; json:&#34;DEA&#34;`
+<span id="Provider.SpecialtyConceptID"></span>    SpecialtyConceptID       <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:specialty_concept_id&#34; json:&#34;specialty_concept_id&#34;`
+<span id="Provider.CareSiteID"></span>    CareSiteID               <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:care_site_id&#34; json:&#34;care_site_id&#34;`
+<span id="Provider.YearOfBirth"></span>    YearOfBirth              <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:year_of_birth&#34; json:&#34;year_of_birth&#34;`
+<span id="Provider.GenderConceptID"></span>    GenderConceptID          <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:gender_concept_id&#34; json:&#34;gender_concept_id&#34;`
+<span id="Provider.ProviderSourceValue"></span>    ProviderSourceValue      <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:provider_source_value&#34; json:&#34;provider_source_value&#34;`
+<span id="Provider.SpecialtySourceValue"></span>    SpecialtySourceValue     <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:specialty_source_value&#34; json:&#34;specialty_source_value&#34;`
+<span id="Provider.SpecialtySourceConceptID"></span>    SpecialtySourceConceptID <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:specialty_source_concept_id&#34; json:&#34;specialty_source_concept_id&#34;`
+<span id="Provider.GenderSourceValue"></span>    GenderSourceValue        <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:gender_source_value&#34; json:&#34;gender_source_value&#34;`
+<span id="Provider.GenderSourceConceptID"></span>    GenderSourceConceptID    <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:gender_source_concept_id&#34; json:&#34;gender_source_concept_id&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="Provider.TableName">func (*Provider) <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/provider.go?s=1471:1508#L23">TableName</a>
+					<a class="permalink" href="index.html#Provider.TableName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (p *<a href="index.html#Provider">Provider</a>) TableName() <a href="http://localhost:8085/pkg/builtin/#string">string</a></pre>
+				<p>
+TableName sets the insert table name for this struct type
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="Relationship">type <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/relationship.go?s=143:731#L6">Relationship</a>
+				<a class="permalink" href="index.html#Relationship">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type Relationship struct {
+<span id="Relationship.RelationshipID"></span>    RelationshipID        <a href="http://localhost:8085/pkg/builtin/#string">string</a> `gorm:&#34;column:relationship_id;primary_key&#34; json:&#34;relationship_id&#34;`
+<span id="Relationship.RelationshipName"></span>    RelationshipName      <a href="http://localhost:8085/pkg/builtin/#string">string</a> `gorm:&#34;column:relationship_name&#34; json:&#34;relationship_name&#34;`
+<span id="Relationship.IsHierarchical"></span>    IsHierarchical        <a href="http://localhost:8085/pkg/builtin/#string">string</a> `gorm:&#34;column:is_hierarchical&#34; json:&#34;is_hierarchical&#34;`
+<span id="Relationship.DefinesAncestry"></span>    DefinesAncestry       <a href="http://localhost:8085/pkg/builtin/#string">string</a> `gorm:&#34;column:defines_ancestry&#34; json:&#34;defines_ancestry&#34;`
+<span id="Relationship.ReverseRelationshipID"></span>    ReverseRelationshipID <a href="http://localhost:8085/pkg/builtin/#string">string</a> `gorm:&#34;column:reverse_relationship_id&#34; json:&#34;reverse_relationship_id&#34;`
+<span id="Relationship.RelationshipConceptID"></span>    RelationshipConceptID <a href="http://localhost:8085/pkg/builtin/#int">int</a>    `gorm:&#34;column:relationship_concept_id&#34; json:&#34;relationship_concept_id&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="Relationship.TableName">func (*Relationship) <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/relationship.go?s=794:835#L16">TableName</a>
+					<a class="permalink" href="index.html#Relationship.TableName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (r *<a href="index.html#Relationship">Relationship</a>) TableName() <a href="http://localhost:8085/pkg/builtin/#string">string</a></pre>
+				<p>
+TableName sets the insert table name for this struct type
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="SourceToConceptMap">type <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/source_to_concept_map.go?s=143:1033#L6">SourceToConceptMap</a>
+				<a class="permalink" href="index.html#SourceToConceptMap">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type SourceToConceptMap struct {
+<span id="SourceToConceptMap.SourceCode"></span>    SourceCode            <a href="http://localhost:8085/pkg/builtin/#string">string</a>      `gorm:&#34;column:source_code;primary_key&#34; json:&#34;source_code&#34;`
+<span id="SourceToConceptMap.SourceConceptID"></span>    SourceConceptID       <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:source_concept_id&#34; json:&#34;source_concept_id&#34;`
+<span id="SourceToConceptMap.SourceVocabularyID"></span>    SourceVocabularyID    <a href="http://localhost:8085/pkg/builtin/#string">string</a>      `gorm:&#34;column:source_vocabulary_id&#34; json:&#34;source_vocabulary_id&#34;`
+<span id="SourceToConceptMap.SourceCodeDescription"></span>    SourceCodeDescription <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:source_code_description&#34; json:&#34;source_code_description&#34;`
+<span id="SourceToConceptMap.TargetConceptID"></span>    TargetConceptID       <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:target_concept_id&#34; json:&#34;target_concept_id&#34;`
+<span id="SourceToConceptMap.TargetVocabularyID"></span>    TargetVocabularyID    <a href="http://localhost:8085/pkg/builtin/#string">string</a>      `gorm:&#34;column:target_vocabulary_id&#34; json:&#34;target_vocabulary_id&#34;`
+<span id="SourceToConceptMap.ValidStartDate"></span>    ValidStartDate        <a href="http://localhost:8085/pkg/time/">time</a>.<a href="http://localhost:8085/pkg/time/#Time">Time</a>   `gorm:&#34;column:valid_start_date&#34; json:&#34;valid_start_date&#34;`
+<span id="SourceToConceptMap.ValidEndDate"></span>    ValidEndDate          <a href="http://localhost:8085/pkg/time/">time</a>.<a href="http://localhost:8085/pkg/time/#Time">Time</a>   `gorm:&#34;column:valid_end_date&#34; json:&#34;valid_end_date&#34;`
+<span id="SourceToConceptMap.InvalidReason"></span>    InvalidReason         <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:invalid_reason&#34; json:&#34;invalid_reason&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="SourceToConceptMap.TableName">func (*SourceToConceptMap) <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/source_to_concept_map.go?s=1096:1143#L19">TableName</a>
+					<a class="permalink" href="index.html#SourceToConceptMap.TableName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s *<a href="index.html#SourceToConceptMap">SourceToConceptMap</a>) TableName() <a href="http://localhost:8085/pkg/builtin/#string">string</a></pre>
+				<p>
+TableName sets the insert table name for this struct type
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="Speciman">type <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/speciman.go?s=143:1672#L6">Speciman</a>
+				<a class="permalink" href="index.html#Speciman">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type Speciman struct {
+<span id="Speciman.SpecimenID"></span>    SpecimenID               <a href="http://localhost:8085/pkg/builtin/#int64">int64</a>       `gorm:&#34;column:specimen_id;primary_key&#34; json:&#34;specimen_id&#34;`
+<span id="Speciman.PersonID"></span>    PersonID                 <a href="http://localhost:8085/pkg/builtin/#int64">int64</a>       `gorm:&#34;column:person_id&#34; json:&#34;person_id&#34;`
+<span id="Speciman.SpecimenConceptID"></span>    SpecimenConceptID        <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:specimen_concept_id&#34; json:&#34;specimen_concept_id&#34;`
+<span id="Speciman.SpecimenTypeConceptID"></span>    SpecimenTypeConceptID    <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:specimen_type_concept_id&#34; json:&#34;specimen_type_concept_id&#34;`
+<span id="Speciman.SpecimenDate"></span>    SpecimenDate             <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Time">Time</a>   `gorm:&#34;column:specimen_date&#34; json:&#34;specimen_date&#34;`
+<span id="Speciman.SpecimenDatetime"></span>    SpecimenDatetime         <a href="http://localhost:8085/pkg/time/">time</a>.<a href="http://localhost:8085/pkg/time/#Time">Time</a>   `gorm:&#34;column:specimen_datetime&#34; json:&#34;specimen_datetime&#34;`
+<span id="Speciman.Quantity"></span>    Quantity                 <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Float">Float</a>  `gorm:&#34;column:quantity&#34; json:&#34;quantity&#34;`
+<span id="Speciman.UnitConceptID"></span>    UnitConceptID            <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:unit_concept_id&#34; json:&#34;unit_concept_id&#34;`
+<span id="Speciman.AnatomicSiteConceptID"></span>    AnatomicSiteConceptID    <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:anatomic_site_concept_id&#34; json:&#34;anatomic_site_concept_id&#34;`
+<span id="Speciman.DiseaseStatusConceptID"></span>    DiseaseStatusConceptID   <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:disease_status_concept_id&#34; json:&#34;disease_status_concept_id&#34;`
+<span id="Speciman.SpecimenSourceID"></span>    SpecimenSourceID         <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:specimen_source_id&#34; json:&#34;specimen_source_id&#34;`
+<span id="Speciman.SpecimenSourceValue"></span>    SpecimenSourceValue      <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:specimen_source_value&#34; json:&#34;specimen_source_value&#34;`
+<span id="Speciman.UnitSourceValue"></span>    UnitSourceValue          <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:unit_source_value&#34; json:&#34;unit_source_value&#34;`
+<span id="Speciman.AnatomicSiteSourceValue"></span>    AnatomicSiteSourceValue  <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:anatomic_site_source_value&#34; json:&#34;anatomic_site_source_value&#34;`
+<span id="Speciman.DiseaseStatusSourceValue"></span>    DiseaseStatusSourceValue <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:disease_status_source_value&#34; json:&#34;disease_status_source_value&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="Speciman.TableName">func (*Speciman) <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/speciman.go?s=1735:1772#L25">TableName</a>
+					<a class="permalink" href="index.html#Speciman.TableName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s *<a href="index.html#Speciman">Speciman</a>) TableName() <a href="http://localhost:8085/pkg/builtin/#string">string</a></pre>
+				<p>
+TableName sets the insert table name for this struct type
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="SurveyConduct">type <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/survey_conduct.go?s=143:2874#L6">SurveyConduct</a>
+				<a class="permalink" href="index.html#SurveyConduct">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type SurveyConduct struct {
+<span id="SurveyConduct.SurveyConductID"></span>    SurveyConductID             <a href="http://localhost:8085/pkg/builtin/#int64">int64</a>       `gorm:&#34;column:survey_conduct_id;primary_key&#34; json:&#34;survey_conduct_id&#34;`
+<span id="SurveyConduct.PersonID"></span>    PersonID                    <a href="http://localhost:8085/pkg/builtin/#int64">int64</a>       `gorm:&#34;column:person_id&#34; json:&#34;person_id&#34;`
+<span id="SurveyConduct.SurveyConceptID"></span>    SurveyConceptID             <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:survey_concept_id&#34; json:&#34;survey_concept_id&#34;`
+<span id="SurveyConduct.SurveyStartDate"></span>    SurveyStartDate             <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Time">Time</a>   `gorm:&#34;column:survey_start_date&#34; json:&#34;survey_start_date&#34;`
+<span id="SurveyConduct.SurveyStartDatetime"></span>    SurveyStartDatetime         <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Time">Time</a>   `gorm:&#34;column:survey_start_datetime&#34; json:&#34;survey_start_datetime&#34;`
+<span id="SurveyConduct.SurveyEndDate"></span>    SurveyEndDate               <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Time">Time</a>   `gorm:&#34;column:survey_end_date&#34; json:&#34;survey_end_date&#34;`
+<span id="SurveyConduct.SurveyEndDatetime"></span>    SurveyEndDatetime           <a href="http://localhost:8085/pkg/time/">time</a>.<a href="http://localhost:8085/pkg/time/#Time">Time</a>   `gorm:&#34;column:survey_end_datetime&#34; json:&#34;survey_end_datetime&#34;`
+<span id="SurveyConduct.ProviderID"></span>    ProviderID                  <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:provider_id&#34; json:&#34;provider_id&#34;`
+<span id="SurveyConduct.AssistedConceptID"></span>    AssistedConceptID           <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:assisted_concept_id&#34; json:&#34;assisted_concept_id&#34;`
+<span id="SurveyConduct.RespondentTypeConceptID"></span>    RespondentTypeConceptID     <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:respondent_type_concept_id&#34; json:&#34;respondent_type_concept_id&#34;`
+<span id="SurveyConduct.TimingConceptID"></span>    TimingConceptID             <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:timing_concept_id&#34; json:&#34;timing_concept_id&#34;`
+<span id="SurveyConduct.CollectionMethodConceptID"></span>    CollectionMethodConceptID   <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:collection_method_concept_id&#34; json:&#34;collection_method_concept_id&#34;`
+<span id="SurveyConduct.AssistedSourceValue"></span>    AssistedSourceValue         <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:assisted_source_value&#34; json:&#34;assisted_source_value&#34;`
+<span id="SurveyConduct.RespondentTypeSourceValue"></span>    RespondentTypeSourceValue   <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:respondent_type_source_value&#34; json:&#34;respondent_type_source_value&#34;`
+<span id="SurveyConduct.TimingSourceValue"></span>    TimingSourceValue           <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:timing_source_value&#34; json:&#34;timing_source_value&#34;`
+<span id="SurveyConduct.CollectionMethodSourceValue"></span>    CollectionMethodSourceValue <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:collection_method_source_value&#34; json:&#34;collection_method_source_value&#34;`
+<span id="SurveyConduct.SurveySourceValue"></span>    SurveySourceValue           <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:survey_source_value&#34; json:&#34;survey_source_value&#34;`
+<span id="SurveyConduct.SurveySourceConceptID"></span>    SurveySourceConceptID       <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:survey_source_concept_id&#34; json:&#34;survey_source_concept_id&#34;`
+<span id="SurveyConduct.SurveySourceIdentifier"></span>    SurveySourceIdentifier      <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:survey_source_identifier&#34; json:&#34;survey_source_identifier&#34;`
+<span id="SurveyConduct.ValidatedSurveyConceptID"></span>    ValidatedSurveyConceptID    <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:validated_survey_concept_id&#34; json:&#34;validated_survey_concept_id&#34;`
+<span id="SurveyConduct.ValidatedSurveySourceValue"></span>    ValidatedSurveySourceValue  <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:validated_survey_source_value&#34; json:&#34;validated_survey_source_value&#34;`
+<span id="SurveyConduct.SurveyVersionNumber"></span>    SurveyVersionNumber         <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:survey_version_number&#34; json:&#34;survey_version_number&#34;`
+<span id="SurveyConduct.VisitOccurrenceID"></span>    VisitOccurrenceID           <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:visit_occurrence_id&#34; json:&#34;visit_occurrence_id&#34;`
+<span id="SurveyConduct.VisitDetailID"></span>    VisitDetailID               <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:visit_detail_id&#34; json:&#34;visit_detail_id&#34;`
+<span id="SurveyConduct.ResponseVisitOccurrenceID"></span>    ResponseVisitOccurrenceID   <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:response_visit_occurrence_id&#34; json:&#34;response_visit_occurrence_id&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="SurveyConduct.TableName">func (*SurveyConduct) <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/survey_conduct.go?s=2937:2979#L35">TableName</a>
+					<a class="permalink" href="index.html#SurveyConduct.TableName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s *<a href="index.html#SurveyConduct">SurveyConduct</a>) TableName() <a href="http://localhost:8085/pkg/builtin/#string">string</a></pre>
+				<p>
+TableName sets the insert table name for this struct type
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="VisitDetail">type <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/visit_detail.go?s=143:2243#L6">VisitDetail</a>
+				<a class="permalink" href="index.html#VisitDetail">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type VisitDetail struct {
+<span id="VisitDetail.VisitDetailID"></span>    VisitDetailID              <a href="http://localhost:8085/pkg/builtin/#int64">int64</a>       `gorm:&#34;column:visit_detail_id;primary_key&#34; json:&#34;visit_detail_id&#34;`
+<span id="VisitDetail.PersonID"></span>    PersonID                   <a href="http://localhost:8085/pkg/builtin/#int64">int64</a>       `gorm:&#34;column:person_id&#34; json:&#34;person_id&#34;`
+<span id="VisitDetail.VisitDetailConceptID"></span>    VisitDetailConceptID       <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:visit_detail_concept_id&#34; json:&#34;visit_detail_concept_id&#34;`
+<span id="VisitDetail.VisitDetailStartDate"></span>    VisitDetailStartDate       <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Time">Time</a>   `gorm:&#34;column:visit_detail_start_date&#34; json:&#34;visit_detail_start_date&#34;`
+<span id="VisitDetail.VisitDetailStartDatetime"></span>    VisitDetailStartDatetime   <a href="http://localhost:8085/pkg/time/">time</a>.<a href="http://localhost:8085/pkg/time/#Time">Time</a>   `gorm:&#34;column:visit_detail_start_datetime&#34; json:&#34;visit_detail_start_datetime&#34;`
+<span id="VisitDetail.VisitDetailEndDate"></span>    VisitDetailEndDate         <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Time">Time</a>   `gorm:&#34;column:visit_detail_end_date&#34; json:&#34;visit_detail_end_date&#34;`
+<span id="VisitDetail.VisitDetailEndDatetime"></span>    VisitDetailEndDatetime     <a href="http://localhost:8085/pkg/time/">time</a>.<a href="http://localhost:8085/pkg/time/#Time">Time</a>   `gorm:&#34;column:visit_detail_end_datetime&#34; json:&#34;visit_detail_end_datetime&#34;`
+<span id="VisitDetail.VisitDetailTypeConceptID"></span>    VisitDetailTypeConceptID   <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:visit_detail_type_concept_id&#34; json:&#34;visit_detail_type_concept_id&#34;`
+<span id="VisitDetail.ProviderID"></span>    ProviderID                 <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:provider_id&#34; json:&#34;provider_id&#34;`
+<span id="VisitDetail.CareSiteID"></span>    CareSiteID                 <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:care_site_id&#34; json:&#34;care_site_id&#34;`
+<span id="VisitDetail.DischargeToConceptID"></span>    DischargeToConceptID       <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:discharge_to_concept_id&#34; json:&#34;discharge_to_concept_id&#34;`
+<span id="VisitDetail.AdmittedFromConceptID"></span>    AdmittedFromConceptID      <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:admitted_from_concept_id&#34; json:&#34;admitted_from_concept_id&#34;`
+<span id="VisitDetail.AdmittedFromSourceValue"></span>    AdmittedFromSourceValue    <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:admitted_from_source_value&#34; json:&#34;admitted_from_source_value&#34;`
+<span id="VisitDetail.VisitDetailSourceValue"></span>    VisitDetailSourceValue     <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:visit_detail_source_value&#34; json:&#34;visit_detail_source_value&#34;`
+<span id="VisitDetail.VisitDetailSourceConceptID"></span>    VisitDetailSourceConceptID <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:visit_detail_source_concept_id&#34; json:&#34;visit_detail_source_concept_id&#34;`
+<span id="VisitDetail.DischargeToSourceValue"></span>    DischargeToSourceValue     <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:discharge_to_source_value&#34; json:&#34;discharge_to_source_value&#34;`
+<span id="VisitDetail.PrecedingVisitDetailID"></span>    PrecedingVisitDetailID     <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:preceding_visit_detail_id&#34; json:&#34;preceding_visit_detail_id&#34;`
+<span id="VisitDetail.VisitDetailParentID"></span>    VisitDetailParentID        <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:visit_detail_parent_id&#34; json:&#34;visit_detail_parent_id&#34;`
+<span id="VisitDetail.VisitOccurrenceID"></span>    VisitOccurrenceID          <a href="http://localhost:8085/pkg/builtin/#int64">int64</a>       `gorm:&#34;column:visit_occurrence_id&#34; json:&#34;visit_occurrence_id&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="VisitDetail.TableName">func (*VisitDetail) <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/visit_detail.go?s=2306:2346#L29">TableName</a>
+					<a class="permalink" href="index.html#VisitDetail.TableName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (v *<a href="index.html#VisitDetail">VisitDetail</a>) TableName() <a href="http://localhost:8085/pkg/builtin/#string">string</a></pre>
+				<p>
+TableName sets the insert table name for this struct type
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="VisitOccurrence">type <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/visit_occurrence.go?s=143:1939#L6">VisitOccurrence</a>
+				<a class="permalink" href="index.html#VisitOccurrence">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type VisitOccurrence struct {
+<span id="VisitOccurrence.VisitOccurrenceID"></span>    VisitOccurrenceID          <a href="http://localhost:8085/pkg/builtin/#int64">int64</a>       `gorm:&#34;column:visit_occurrence_id;primary_key&#34; json:&#34;visit_occurrence_id&#34;`
+<span id="VisitOccurrence.PersonID"></span>    PersonID                   <a href="http://localhost:8085/pkg/builtin/#int64">int64</a>       `gorm:&#34;column:person_id&#34; json:&#34;person_id&#34;`
+<span id="VisitOccurrence.VisitConceptID"></span>    VisitConceptID             <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:visit_concept_id&#34; json:&#34;visit_concept_id&#34;`
+<span id="VisitOccurrence.VisitStartDate"></span>    VisitStartDate             <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Time">Time</a>   `gorm:&#34;column:visit_start_date&#34; json:&#34;visit_start_date&#34;`
+<span id="VisitOccurrence.VisitStartDatetime"></span>    VisitStartDatetime         <a href="http://localhost:8085/pkg/time/">time</a>.<a href="http://localhost:8085/pkg/time/#Time">Time</a>   `gorm:&#34;column:visit_start_datetime&#34; json:&#34;visit_start_datetime&#34;`
+<span id="VisitOccurrence.VisitEndDate"></span>    VisitEndDate               <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Time">Time</a>   `gorm:&#34;column:visit_end_date&#34; json:&#34;visit_end_date&#34;`
+<span id="VisitOccurrence.VisitEndDatetime"></span>    VisitEndDatetime           <a href="http://localhost:8085/pkg/time/">time</a>.<a href="http://localhost:8085/pkg/time/#Time">Time</a>   `gorm:&#34;column:visit_end_datetime&#34; json:&#34;visit_end_datetime&#34;`
+<span id="VisitOccurrence.VisitTypeConceptID"></span>    VisitTypeConceptID         <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:visit_type_concept_id&#34; json:&#34;visit_type_concept_id&#34;`
+<span id="VisitOccurrence.ProviderID"></span>    ProviderID                 <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:provider_id&#34; json:&#34;provider_id&#34;`
+<span id="VisitOccurrence.CareSiteID"></span>    CareSiteID                 <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:care_site_id&#34; json:&#34;care_site_id&#34;`
+<span id="VisitOccurrence.VisitSourceValue"></span>    VisitSourceValue           <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:visit_source_value&#34; json:&#34;visit_source_value&#34;`
+<span id="VisitOccurrence.VisitSourceConceptID"></span>    VisitSourceConceptID       <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:visit_source_concept_id&#34; json:&#34;visit_source_concept_id&#34;`
+<span id="VisitOccurrence.AdmittedFromConceptID"></span>    AdmittedFromConceptID      <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:admitted_from_concept_id&#34; json:&#34;admitted_from_concept_id&#34;`
+<span id="VisitOccurrence.AdmittedFromSourceValue"></span>    AdmittedFromSourceValue    <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:admitted_from_source_value&#34; json:&#34;admitted_from_source_value&#34;`
+<span id="VisitOccurrence.DischargeToSourceValue"></span>    DischargeToSourceValue     <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:discharge_to_source_value&#34; json:&#34;discharge_to_source_value&#34;`
+<span id="VisitOccurrence.DischargeToConceptID"></span>    DischargeToConceptID       <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:discharge_to_concept_id&#34; json:&#34;discharge_to_concept_id&#34;`
+<span id="VisitOccurrence.PrecedingVisitOccurrenceID"></span>    PrecedingVisitOccurrenceID <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#Int">Int</a>    `gorm:&#34;column:preceding_visit_occurrence_id&#34; json:&#34;preceding_visit_occurrence_id&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="VisitOccurrence.TableName">func (*VisitOccurrence) <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/visit_occurrence.go?s=2002:2046#L27">TableName</a>
+					<a class="permalink" href="index.html#VisitOccurrence.TableName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (v *<a href="index.html#VisitOccurrence">VisitOccurrence</a>) TableName() <a href="http://localhost:8085/pkg/builtin/#string">string</a></pre>
+				<p>
+TableName sets the insert table name for this struct type
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="Vocabulary">type <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/vocabulary.go?s=143:645#L6">Vocabulary</a>
+				<a class="permalink" href="index.html#Vocabulary">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type Vocabulary struct {
+<span id="Vocabulary.VocabularyID"></span>    VocabularyID        <a href="http://localhost:8085/pkg/builtin/#string">string</a>      `gorm:&#34;column:vocabulary_id;primary_key&#34; json:&#34;vocabulary_id&#34;`
+<span id="Vocabulary.VocabularyName"></span>    VocabularyName      <a href="http://localhost:8085/pkg/builtin/#string">string</a>      `gorm:&#34;column:vocabulary_name&#34; json:&#34;vocabulary_name&#34;`
+<span id="Vocabulary.VocabularyReference"></span>    VocabularyReference <a href="http://localhost:8085/pkg/builtin/#string">string</a>      `gorm:&#34;column:vocabulary_reference&#34; json:&#34;vocabulary_reference&#34;`
+<span id="Vocabulary.VocabularyVersion"></span>    VocabularyVersion   <a href="http://localhost:8085/pkg/github.com/guregu/null/">null</a>.<a href="http://localhost:8085/pkg/github.com/guregu/null/#String">String</a> `gorm:&#34;column:vocabulary_version&#34; json:&#34;vocabulary_version&#34;`
+<span id="Vocabulary.VocabularyConceptID"></span>    VocabularyConceptID <a href="http://localhost:8085/pkg/builtin/#int">int</a>         `gorm:&#34;column:vocabulary_concept_id&#34; json:&#34;vocabulary_concept_id&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="Vocabulary.TableName">func (*Vocabulary) <a href="http://localhost:8085/src/github.com/E-Health/gocdm/model/vocabulary.go?s=708:747#L15">TableName</a>
+					<a class="permalink" href="index.html#Vocabulary.TableName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (v *<a href="index.html#Vocabulary">Vocabulary</a>) TableName() <a href="http://localhost:8085/pkg/builtin/#string">string</a></pre>
+				<p>
+TableName sets the insert table name for this struct type
+</p>
+
+				
+				
+				
+			
+		
+	
+
+	
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.14.2.<br>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>
