@@ -19,12 +19,12 @@ The [OHSDI](https://www.ohdsi.org/) OMOP Common Data Model allows for the system
 
 ### APIs (example for Person)
 
-GET /people
-POST /people
-GET /people/:id
-POST /people/:id
-PUT /people/:id
-DELETE /people/:id
+* GET /people
+* POST /people
+* GET /people/:id
+* POST /people/:id
+* PUT /people/:id
+* DELETE /people/:id
 
 ## Contributors
 
