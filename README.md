@@ -15,6 +15,8 @@ The [OHSDI](https://www.ohdsi.org/) OMOP Common Data Model allows for the system
 
 ### see *main.go* for usage examples
 
+### [documentation](https://e-health.github.io/gocdm/pkg/github.com/E-Health/gocdm/)
+
 ### APIs (example for Person)
 
 GET /people
