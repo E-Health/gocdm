@@ -1,0 +1,3263 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>api - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.14.2";</script>
+<script src="../../../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://localhost:8085/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://localhost:8085/pkg/">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:8085/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package api
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "github.com/E-Health/gocdm/api"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+			
+				<dd><a href="index.html#pkg-variables">Variables</a></dd>
+			
+			
+				
+				<dd><a href="index.html#AddAttributeDefinition">func AddAttributeDefinition(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#AddCareSite">func AddCareSite(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#AddCdmSource">func AddCdmSource(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#AddConcept">func AddConcept(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#AddConceptAncestor">func AddConceptAncestor(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#AddConceptClass">func AddConceptClass(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#AddConceptRelationship">func AddConceptRelationship(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#AddConceptSynonym">func AddConceptSynonym(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#AddConditionEra">func AddConditionEra(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#AddConditionOccurrence">func AddConditionOccurrence(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#AddCost">func AddCost(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#AddDeviceExposure">func AddDeviceExposure(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#AddDomain">func AddDomain(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#AddDoseEra">func AddDoseEra(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#AddDrugEra">func AddDrugEra(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#AddDrugExposure">func AddDrugExposure(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#AddDrugStrength">func AddDrugStrength(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#AddFactRelationship">func AddFactRelationship(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#AddLocation">func AddLocation(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#AddLocationHistory">func AddLocationHistory(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#AddMeasurement">func AddMeasurement(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#AddMetadatum">func AddMetadatum(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#AddNote">func AddNote(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#AddNoteNlp">func AddNoteNlp(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#AddObservation">func AddObservation(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#AddObservationPeriod">func AddObservationPeriod(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#AddPayerPlanPeriod">func AddPayerPlanPeriod(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#AddPerson">func AddPerson(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#AddProcedureOccurrence">func AddProcedureOccurrence(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#AddProvider">func AddProvider(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#AddRelationship">func AddRelationship(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#AddSourceToConceptMap">func AddSourceToConceptMap(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#AddSpeciman">func AddSpeciman(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#AddSurveyConduct">func AddSurveyConduct(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#AddVisitDetail">func AddVisitDetail(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#AddVisitOccurrence">func AddVisitOccurrence(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#AddVocabulary">func AddVocabulary(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#ConfigGinRouter">func ConfigGinRouter(router gin.IRoutes)</a></dd>
+			
+				
+				<dd><a href="index.html#ConfigRouter">func ConfigRouter() http.Handler</a></dd>
+			
+				
+				<dd><a href="index.html#ConverHttprouterToGin">func ConverHttprouterToGin(f httprouter.Handle) gin.HandlerFunc</a></dd>
+			
+				
+				<dd><a href="index.html#DeleteAttributeDefinition">func DeleteAttributeDefinition(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#DeleteCareSite">func DeleteCareSite(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#DeleteCdmSource">func DeleteCdmSource(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#DeleteConcept">func DeleteConcept(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#DeleteConceptAncestor">func DeleteConceptAncestor(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#DeleteConceptClass">func DeleteConceptClass(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#DeleteConceptRelationship">func DeleteConceptRelationship(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#DeleteConceptSynonym">func DeleteConceptSynonym(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#DeleteConditionEra">func DeleteConditionEra(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#DeleteConditionOccurrence">func DeleteConditionOccurrence(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#DeleteCost">func DeleteCost(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#DeleteDeviceExposure">func DeleteDeviceExposure(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#DeleteDomain">func DeleteDomain(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#DeleteDoseEra">func DeleteDoseEra(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#DeleteDrugEra">func DeleteDrugEra(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#DeleteDrugExposure">func DeleteDrugExposure(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#DeleteDrugStrength">func DeleteDrugStrength(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#DeleteFactRelationship">func DeleteFactRelationship(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#DeleteLocation">func DeleteLocation(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#DeleteLocationHistory">func DeleteLocationHistory(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#DeleteMeasurement">func DeleteMeasurement(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#DeleteMetadatum">func DeleteMetadatum(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#DeleteNote">func DeleteNote(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#DeleteNoteNlp">func DeleteNoteNlp(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#DeleteObservation">func DeleteObservation(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#DeleteObservationPeriod">func DeleteObservationPeriod(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#DeletePayerPlanPeriod">func DeletePayerPlanPeriod(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#DeletePerson">func DeletePerson(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#DeleteProcedureOccurrence">func DeleteProcedureOccurrence(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#DeleteProvider">func DeleteProvider(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#DeleteRelationship">func DeleteRelationship(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#DeleteSourceToConceptMap">func DeleteSourceToConceptMap(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#DeleteSpeciman">func DeleteSpeciman(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#DeleteSurveyConduct">func DeleteSurveyConduct(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#DeleteVisitDetail">func DeleteVisitDetail(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#DeleteVisitOccurrence">func DeleteVisitOccurrence(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#DeleteVocabulary">func DeleteVocabulary(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetAllAttributeDefinitions">func GetAllAttributeDefinitions(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetAllCareSites">func GetAllCareSites(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetAllCdmSources">func GetAllCdmSources(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetAllConceptAncestors">func GetAllConceptAncestors(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetAllConceptClasses">func GetAllConceptClasses(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetAllConceptRelationships">func GetAllConceptRelationships(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetAllConceptSynonyms">func GetAllConceptSynonyms(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetAllConcepts">func GetAllConcepts(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetAllConditionEras">func GetAllConditionEras(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetAllConditionOccurrences">func GetAllConditionOccurrences(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetAllCosts">func GetAllCosts(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetAllDeviceExposures">func GetAllDeviceExposures(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetAllDomains">func GetAllDomains(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetAllDoseEras">func GetAllDoseEras(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetAllDrugEras">func GetAllDrugEras(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetAllDrugExposures">func GetAllDrugExposures(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetAllDrugStrengths">func GetAllDrugStrengths(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetAllFactRelationships">func GetAllFactRelationships(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetAllLocationHistories">func GetAllLocationHistories(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetAllLocations">func GetAllLocations(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetAllMeasurements">func GetAllMeasurements(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetAllMetadata">func GetAllMetadata(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetAllNoteNlps">func GetAllNoteNlps(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetAllNotes">func GetAllNotes(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetAllObservationPeriods">func GetAllObservationPeriods(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetAllObservations">func GetAllObservations(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetAllPayerPlanPeriods">func GetAllPayerPlanPeriods(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetAllPeople">func GetAllPeople(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetAllProcedureOccurrences">func GetAllProcedureOccurrences(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetAllProviders">func GetAllProviders(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetAllRelationships">func GetAllRelationships(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetAllSourceToConceptMaps">func GetAllSourceToConceptMaps(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetAllSpecimen">func GetAllSpecimen(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetAllSurveyConducts">func GetAllSurveyConducts(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetAllVisitDetails">func GetAllVisitDetails(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetAllVisitOccurrences">func GetAllVisitOccurrences(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetAllVocabularies">func GetAllVocabularies(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetAttributeDefinition">func GetAttributeDefinition(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetCareSite">func GetCareSite(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetCdmSource">func GetCdmSource(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetConcept">func GetConcept(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetConceptAncestor">func GetConceptAncestor(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetConceptClass">func GetConceptClass(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetConceptRelationship">func GetConceptRelationship(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetConceptSynonym">func GetConceptSynonym(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetConditionEra">func GetConditionEra(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetConditionOccurrence">func GetConditionOccurrence(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetCost">func GetCost(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetDeviceExposure">func GetDeviceExposure(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetDomain">func GetDomain(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetDoseEra">func GetDoseEra(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetDrugEra">func GetDrugEra(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetDrugExposure">func GetDrugExposure(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetDrugStrength">func GetDrugStrength(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetFactRelationship">func GetFactRelationship(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetLocation">func GetLocation(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetLocationHistory">func GetLocationHistory(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetMeasurement">func GetMeasurement(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetMetadatum">func GetMetadatum(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetNameForTest">func GetNameForTest() string</a></dd>
+			
+				
+				<dd><a href="index.html#GetNote">func GetNote(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetNoteNlp">func GetNoteNlp(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetObservation">func GetObservation(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetObservationPeriod">func GetObservationPeriod(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetPayerPlanPeriod">func GetPayerPlanPeriod(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetPerson">func GetPerson(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetProcedureOccurrence">func GetProcedureOccurrence(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetProvider">func GetProvider(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetRelationship">func GetRelationship(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetSourceToConceptMap">func GetSourceToConceptMap(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetSpeciman">func GetSpeciman(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetSurveyConduct">func GetSurveyConduct(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetVisitDetail">func GetVisitDetail(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetVisitOccurrence">func GetVisitOccurrence(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#GetVocabulary">func GetVocabulary(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#UpdateAttributeDefinition">func UpdateAttributeDefinition(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#UpdateCareSite">func UpdateCareSite(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#UpdateCdmSource">func UpdateCdmSource(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#UpdateConcept">func UpdateConcept(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#UpdateConceptAncestor">func UpdateConceptAncestor(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#UpdateConceptClass">func UpdateConceptClass(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#UpdateConceptRelationship">func UpdateConceptRelationship(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#UpdateConceptSynonym">func UpdateConceptSynonym(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#UpdateConditionEra">func UpdateConditionEra(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#UpdateConditionOccurrence">func UpdateConditionOccurrence(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#UpdateCost">func UpdateCost(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#UpdateDeviceExposure">func UpdateDeviceExposure(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#UpdateDomain">func UpdateDomain(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#UpdateDoseEra">func UpdateDoseEra(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#UpdateDrugEra">func UpdateDrugEra(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#UpdateDrugExposure">func UpdateDrugExposure(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#UpdateDrugStrength">func UpdateDrugStrength(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#UpdateFactRelationship">func UpdateFactRelationship(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#UpdateLocation">func UpdateLocation(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#UpdateLocationHistory">func UpdateLocationHistory(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#UpdateMeasurement">func UpdateMeasurement(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#UpdateMetadatum">func UpdateMetadatum(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#UpdateNote">func UpdateNote(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#UpdateNoteNlp">func UpdateNoteNlp(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#UpdateObservation">func UpdateObservation(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#UpdateObservationPeriod">func UpdateObservationPeriod(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#UpdatePayerPlanPeriod">func UpdatePayerPlanPeriod(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#UpdatePerson">func UpdatePerson(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#UpdateProcedureOccurrence">func UpdateProcedureOccurrence(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#UpdateProvider">func UpdateProvider(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#UpdateRelationship">func UpdateRelationship(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#UpdateSourceToConceptMap">func UpdateSourceToConceptMap(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#UpdateSpeciman">func UpdateSpeciman(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#UpdateSurveyConduct">func UpdateSurveyConduct(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#UpdateVisitDetail">func UpdateVisitDetail(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#UpdateVisitOccurrence">func UpdateVisitOccurrence(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+				
+				<dd><a href="index.html#UpdateVocabulary">func UpdateVocabulary(w http.ResponseWriter, r *http.Request, ps httprouter.Params)</a></dd>
+			
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/attribute_definition.go">attribute_definition.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/care_site.go">care_site.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/cdm_source.go">cdm_source.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/concept.go">concept.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/concept_ancestor.go">concept_ancestor.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/concept_class.go">concept_class.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/concept_relationship.go">concept_relationship.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/concept_synonym.go">concept_synonym.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/condition_era.go">condition_era.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/condition_occurrence.go">condition_occurrence.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/cost.go">cost.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/device_exposure.go">device_exposure.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/domain.go">domain.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/dose_era.go">dose_era.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/drug_era.go">drug_era.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/drug_exposure.go">drug_exposure.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/drug_strength.go">drug_strength.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/fact_relationship.go">fact_relationship.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/location.go">location.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/location_history.go">location_history.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/measurement.go">measurement.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/metadatum.go">metadatum.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/note.go">note.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/note_nlp.go">note_nlp.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/observation.go">observation.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/observation_period.go">observation_period.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/payer_plan_period.go">payer_plan_period.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/person.go">person.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/procedure_occurrence.go">procedure_occurrence.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/provider.go">provider.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/relationship.go">relationship.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/router.go">router.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/source_to_concept_map.go">source_to_concept_map.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/speciman.go">speciman.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/survey_conduct.go">survey_conduct.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/visit_detail.go">visit_detail.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/visit_occurrence.go">visit_occurrence.go</a>
+			
+				<a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/vocabulary.go">vocabulary.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+		
+			<h2 id="pkg-variables">Variables</h2>
+			
+				
+				<pre>var <span id="DB">DB</span> *<a href="http://localhost:8085/pkg/github.com/jinzhu/gorm/">gorm</a>.<a href="http://localhost:8085/pkg/github.com/jinzhu/gorm/#DB">DB</a></pre>
+			
+		
+		
+			
+			
+			<h2 id="AddAttributeDefinition">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/attribute_definition.go?s=2341:2430#L67">AddAttributeDefinition</a>
+				<a class="permalink" href="index.html#AddAttributeDefinition">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func AddAttributeDefinition(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="AddCareSite">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/care_site.go?s=1912:1990#L67">AddCareSite</a>
+				<a class="permalink" href="index.html#AddCareSite">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func AddCareSite(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="AddCdmSource">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/cdm_source.go?s=1951:2030#L67">AddCdmSource</a>
+				<a class="permalink" href="index.html#AddCdmSource">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func AddCdmSource(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="AddConcept">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/concept.go?s=1927:2004#L71">AddConcept</a>
+				<a class="permalink" href="index.html#AddConcept">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func AddConcept(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="AddConceptAncestor">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/concept_ancestor.go?s=2185:2270#L67">AddConceptAncestor</a>
+				<a class="permalink" href="index.html#AddConceptAncestor">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func AddConceptAncestor(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="AddConceptClass">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/concept_class.go?s=2092:2174#L67">AddConceptClass</a>
+				<a class="permalink" href="index.html#AddConceptClass">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func AddConceptClass(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="AddConceptRelationship">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/concept_relationship.go?s=2341:2430#L67">AddConceptRelationship</a>
+				<a class="permalink" href="index.html#AddConceptRelationship">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func AddConceptRelationship(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="AddConceptSynonym">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/concept_synonym.go?s=2146:2230#L67">AddConceptSynonym</a>
+				<a class="permalink" href="index.html#AddConceptSynonym">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func AddConceptSynonym(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="AddConditionEra">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/condition_era.go?s=2068:2150#L67">AddConditionEra</a>
+				<a class="permalink" href="index.html#AddConditionEra">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func AddConditionEra(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="AddConditionOccurrence">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/condition_occurrence.go?s=2341:2430#L67">AddConditionOccurrence</a>
+				<a class="permalink" href="index.html#AddConditionOccurrence">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func AddConditionOccurrence(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="AddCost">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/cost.go?s=1756:1830#L67">AddCost</a>
+				<a class="permalink" href="index.html#AddCost">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func AddCost(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="AddDeviceExposure">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/device_exposure.go?s=2146:2230#L67">AddDeviceExposure</a>
+				<a class="permalink" href="index.html#AddDeviceExposure">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func AddDeviceExposure(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="AddDomain">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/domain.go?s=1834:1910#L67">AddDomain</a>
+				<a class="permalink" href="index.html#AddDomain">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func AddDomain(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="AddDoseEra">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/dose_era.go?s=1873:1950#L67">AddDoseEra</a>
+				<a class="permalink" href="index.html#AddDoseEra">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func AddDoseEra(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="AddDrugEra">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/drug_era.go?s=1873:1950#L67">AddDrugEra</a>
+				<a class="permalink" href="index.html#AddDrugEra">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func AddDrugEra(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="AddDrugExposure">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/drug_exposure.go?s=2068:2150#L67">AddDrugExposure</a>
+				<a class="permalink" href="index.html#AddDrugExposure">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func AddDrugExposure(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="AddDrugStrength">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/drug_strength.go?s=2068:2150#L67">AddDrugStrength</a>
+				<a class="permalink" href="index.html#AddDrugStrength">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func AddDrugStrength(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="AddFactRelationship">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/fact_relationship.go?s=2224:2310#L67">AddFactRelationship</a>
+				<a class="permalink" href="index.html#AddFactRelationship">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func AddFactRelationship(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="AddLocation">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/location.go?s=1912:1990#L67">AddLocation</a>
+				<a class="permalink" href="index.html#AddLocation">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func AddLocation(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="AddLocationHistory">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/location_history.go?s=2209:2294#L67">AddLocationHistory</a>
+				<a class="permalink" href="index.html#AddLocationHistory">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func AddLocationHistory(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="AddMeasurement">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/measurement.go?s=2029:2110#L67">AddMeasurement</a>
+				<a class="permalink" href="index.html#AddMeasurement">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func AddMeasurement(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="AddMetadatum">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/metadatum.go?s=1903:1982#L67">AddMetadatum</a>
+				<a class="permalink" href="index.html#AddMetadatum">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func AddMetadatum(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="AddNote">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/note.go?s=1756:1830#L67">AddNote</a>
+				<a class="permalink" href="index.html#AddNote">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func AddNote(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="AddNoteNlp">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/note_nlp.go?s=1873:1950#L67">AddNoteNlp</a>
+				<a class="permalink" href="index.html#AddNoteNlp">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func AddNoteNlp(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="AddObservation">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/observation.go?s=2029:2110#L67">AddObservation</a>
+				<a class="permalink" href="index.html#AddObservation">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func AddObservation(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="AddObservationPeriod">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/observation_period.go?s=2263:2350#L67">AddObservationPeriod</a>
+				<a class="permalink" href="index.html#AddObservationPeriod">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func AddObservationPeriod(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="AddPayerPlanPeriod">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/payer_plan_period.go?s=2185:2270#L67">AddPayerPlanPeriod</a>
+				<a class="permalink" href="index.html#AddPayerPlanPeriod">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func AddPayerPlanPeriod(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="AddPerson">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/person.go?s=1810:1886#L67">AddPerson</a>
+				<a class="permalink" href="index.html#AddPerson">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func AddPerson(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="AddProcedureOccurrence">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/procedure_occurrence.go?s=2341:2430#L67">AddProcedureOccurrence</a>
+				<a class="permalink" href="index.html#AddProcedureOccurrence">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func AddProcedureOccurrence(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="AddProvider">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/provider.go?s=1912:1990#L67">AddProvider</a>
+				<a class="permalink" href="index.html#AddProvider">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func AddProvider(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="AddRelationship">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/relationship.go?s=2068:2150#L67">AddRelationship</a>
+				<a class="permalink" href="index.html#AddRelationship">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func AddRelationship(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="AddSourceToConceptMap">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/source_to_concept_map.go?s=2302:2390#L67">AddSourceToConceptMap</a>
+				<a class="permalink" href="index.html#AddSourceToConceptMap">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func AddSourceToConceptMap(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="AddSpeciman">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/speciman.go?s=1888:1966#L67">AddSpeciman</a>
+				<a class="permalink" href="index.html#AddSpeciman">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func AddSpeciman(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="AddSurveyConduct">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/survey_conduct.go?s=2107:2190#L67">AddSurveyConduct</a>
+				<a class="permalink" href="index.html#AddSurveyConduct">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func AddSurveyConduct(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="AddVisitDetail">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/visit_detail.go?s=2029:2110#L67">AddVisitDetail</a>
+				<a class="permalink" href="index.html#AddVisitDetail">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func AddVisitDetail(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="AddVisitOccurrence">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/visit_occurrence.go?s=2185:2270#L67">AddVisitOccurrence</a>
+				<a class="permalink" href="index.html#AddVisitOccurrence">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func AddVisitOccurrence(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="AddVocabulary">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/vocabulary.go?s=2014:2094#L67">AddVocabulary</a>
+				<a class="permalink" href="index.html#AddVocabulary">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func AddVocabulary(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="ConfigGinRouter">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/router.go?s=1802:1842#L58">ConfigGinRouter</a>
+				<a class="permalink" href="index.html#ConfigGinRouter">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func ConfigGinRouter(router <a href="http://localhost:8085/pkg/github.com/gin-gonic/gin/">gin</a>.<a href="http://localhost:8085/pkg/github.com/gin-gonic/gin/#IRoutes">IRoutes</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="ConfigRouter">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/router.go?s=441:473#L15">ConfigRouter</a>
+				<a class="permalink" href="index.html#ConfigRouter">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func ConfigRouter() <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Handler">Handler</a></pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="ConverHttprouterToGin">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/router.go?s=3247:3310#L100">ConverHttprouterToGin</a>
+				<a class="permalink" href="index.html#ConverHttprouterToGin">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func ConverHttprouterToGin(f <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Handle">Handle</a>) <a href="http://localhost:8085/pkg/github.com/gin-gonic/gin/">gin</a>.<a href="http://localhost:8085/pkg/github.com/gin-gonic/gin/#HandlerFunc">HandlerFunc</a></pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="DeleteAttributeDefinition">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/attribute_definition.go?s=3524:3616#L110">DeleteAttributeDefinition</a>
+				<a class="permalink" href="index.html#DeleteAttributeDefinition">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func DeleteAttributeDefinition(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="DeleteCareSite">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/care_site.go?s=2941:3022#L110">DeleteCareSite</a>
+				<a class="permalink" href="index.html#DeleteCareSite">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func DeleteCareSite(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="DeleteCdmSource">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/cdm_source.go?s=2994:3076#L110">DeleteCdmSource</a>
+				<a class="permalink" href="index.html#DeleteCdmSource">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func DeleteCdmSource(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="DeleteConcept">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/concept.go?s=2942:3022#L114">DeleteConcept</a>
+				<a class="permalink" href="index.html#DeleteConcept">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func DeleteConcept(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="DeleteConceptAncestor">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/concept_ancestor.go?s=3312:3400#L110">DeleteConceptAncestor</a>
+				<a class="permalink" href="index.html#DeleteConceptAncestor">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func DeleteConceptAncestor(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="DeleteConceptClass">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/concept_class.go?s=3177:3262#L110">DeleteConceptClass</a>
+				<a class="permalink" href="index.html#DeleteConceptClass">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func DeleteConceptClass(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="DeleteConceptRelationship">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/concept_relationship.go?s=3524:3616#L110">DeleteConceptRelationship</a>
+				<a class="permalink" href="index.html#DeleteConceptRelationship">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func DeleteConceptRelationship(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="DeleteConceptSynonym">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/concept_synonym.go?s=3259:3346#L110">DeleteConceptSynonym</a>
+				<a class="permalink" href="index.html#DeleteConceptSynonym">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func DeleteConceptSynonym(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="DeleteConditionEra">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/condition_era.go?s=3153:3238#L110">DeleteConditionEra</a>
+				<a class="permalink" href="index.html#DeleteConditionEra">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func DeleteConditionEra(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="DeleteConditionOccurrence">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/condition_occurrence.go?s=3524:3616#L110">DeleteConditionOccurrence</a>
+				<a class="permalink" href="index.html#DeleteConditionOccurrence">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func DeleteConditionOccurrence(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="DeleteCost">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/cost.go?s=2729:2806#L110">DeleteCost</a>
+				<a class="permalink" href="index.html#DeleteCost">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func DeleteCost(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="DeleteDeviceExposure">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/device_exposure.go?s=3259:3346#L110">DeleteDeviceExposure</a>
+				<a class="permalink" href="index.html#DeleteDeviceExposure">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func DeleteDeviceExposure(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="DeleteDomain">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/domain.go?s=2835:2914#L110">DeleteDomain</a>
+				<a class="permalink" href="index.html#DeleteDomain">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func DeleteDomain(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="DeleteDoseEra">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/dose_era.go?s=2888:2968#L110">DeleteDoseEra</a>
+				<a class="permalink" href="index.html#DeleteDoseEra">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func DeleteDoseEra(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="DeleteDrugEra">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/drug_era.go?s=2888:2968#L110">DeleteDrugEra</a>
+				<a class="permalink" href="index.html#DeleteDrugEra">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func DeleteDrugEra(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="DeleteDrugExposure">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/drug_exposure.go?s=3153:3238#L110">DeleteDrugExposure</a>
+				<a class="permalink" href="index.html#DeleteDrugExposure">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func DeleteDrugExposure(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="DeleteDrugStrength">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/drug_strength.go?s=3153:3238#L110">DeleteDrugStrength</a>
+				<a class="permalink" href="index.html#DeleteDrugStrength">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func DeleteDrugStrength(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="DeleteFactRelationship">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/fact_relationship.go?s=3365:3454#L110">DeleteFactRelationship</a>
+				<a class="permalink" href="index.html#DeleteFactRelationship">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func DeleteFactRelationship(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="DeleteLocation">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/location.go?s=2941:3022#L110">DeleteLocation</a>
+				<a class="permalink" href="index.html#DeleteLocation">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func DeleteLocation(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="DeleteLocationHistory">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/location_history.go?s=3336:3424#L110">DeleteLocationHistory</a>
+				<a class="permalink" href="index.html#DeleteLocationHistory">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func DeleteLocationHistory(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="DeleteMeasurement">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/measurement.go?s=3100:3184#L110">DeleteMeasurement</a>
+				<a class="permalink" href="index.html#DeleteMeasurement">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func DeleteMeasurement(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="DeleteMetadatum">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/metadatum.go?s=2946:3028#L110">DeleteMetadatum</a>
+				<a class="permalink" href="index.html#DeleteMetadatum">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func DeleteMetadatum(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="DeleteNote">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/note.go?s=2729:2806#L110">DeleteNote</a>
+				<a class="permalink" href="index.html#DeleteNote">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func DeleteNote(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="DeleteNoteNlp">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/note_nlp.go?s=2888:2968#L110">DeleteNoteNlp</a>
+				<a class="permalink" href="index.html#DeleteNoteNlp">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func DeleteNoteNlp(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="DeleteObservation">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/observation.go?s=3100:3184#L110">DeleteObservation</a>
+				<a class="permalink" href="index.html#DeleteObservation">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func DeleteObservation(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="DeleteObservationPeriod">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/observation_period.go?s=3418:3508#L110">DeleteObservationPeriod</a>
+				<a class="permalink" href="index.html#DeleteObservationPeriod">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func DeleteObservationPeriod(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="DeletePayerPlanPeriod">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/payer_plan_period.go?s=3312:3400#L110">DeletePayerPlanPeriod</a>
+				<a class="permalink" href="index.html#DeletePayerPlanPeriod">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func DeletePayerPlanPeriod(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="DeletePerson">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/person.go?s=2811:2890#L110">DeletePerson</a>
+				<a class="permalink" href="index.html#DeletePerson">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func DeletePerson(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="DeleteProcedureOccurrence">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/procedure_occurrence.go?s=3524:3616#L110">DeleteProcedureOccurrence</a>
+				<a class="permalink" href="index.html#DeleteProcedureOccurrence">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func DeleteProcedureOccurrence(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="DeleteProvider">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/provider.go?s=2941:3022#L110">DeleteProvider</a>
+				<a class="permalink" href="index.html#DeleteProvider">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func DeleteProvider(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="DeleteRelationship">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/relationship.go?s=3153:3238#L110">DeleteRelationship</a>
+				<a class="permalink" href="index.html#DeleteRelationship">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func DeleteRelationship(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="DeleteSourceToConceptMap">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/source_to_concept_map.go?s=3471:3562#L110">DeleteSourceToConceptMap</a>
+				<a class="permalink" href="index.html#DeleteSourceToConceptMap">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func DeleteSourceToConceptMap(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="DeleteSpeciman">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/speciman.go?s=2917:2998#L110">DeleteSpeciman</a>
+				<a class="permalink" href="index.html#DeleteSpeciman">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func DeleteSpeciman(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="DeleteSurveyConduct">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/survey_conduct.go?s=3206:3292#L110">DeleteSurveyConduct</a>
+				<a class="permalink" href="index.html#DeleteSurveyConduct">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func DeleteSurveyConduct(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="DeleteVisitDetail">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/visit_detail.go?s=3100:3184#L110">DeleteVisitDetail</a>
+				<a class="permalink" href="index.html#DeleteVisitDetail">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func DeleteVisitDetail(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="DeleteVisitOccurrence">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/visit_occurrence.go?s=3312:3400#L110">DeleteVisitOccurrence</a>
+				<a class="permalink" href="index.html#DeleteVisitOccurrence">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func DeleteVisitOccurrence(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="DeleteVocabulary">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/vocabulary.go?s=3071:3154#L110">DeleteVocabulary</a>
+				<a class="permalink" href="index.html#DeleteVocabulary">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func DeleteVocabulary(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetAllAttributeDefinitions">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/attribute_definition.go?s=1089:1182#L19">GetAllAttributeDefinitions</a>
+				<a class="permalink" href="index.html#GetAllAttributeDefinitions">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetAllAttributeDefinitions(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetAllCareSites">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/care_site.go?s=847:929#L19">GetAllCareSites</a>
+				<a class="permalink" href="index.html#GetAllCareSites">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetAllCareSites(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetAllCdmSources">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/cdm_source.go?s=869:952#L19">GetAllCdmSources</a>
+				<a class="permalink" href="index.html#GetAllCdmSources">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetAllCdmSources(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetAllConceptAncestors">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/concept_ancestor.go?s=1001:1090#L19">GetAllConceptAncestors</a>
+				<a class="permalink" href="index.html#GetAllConceptAncestors">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetAllConceptAncestors(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetAllConceptClasses">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/concept_class.go?s=949:1036#L19">GetAllConceptClasses</a>
+				<a class="permalink" href="index.html#GetAllConceptClasses">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetAllConceptClasses(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetAllConceptRelationships">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/concept_relationship.go?s=1089:1182#L19">GetAllConceptRelationships</a>
+				<a class="permalink" href="index.html#GetAllConceptRelationships">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetAllConceptRelationships(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetAllConceptSynonyms">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/concept_synonym.go?s=979:1067#L19">GetAllConceptSynonyms</a>
+				<a class="permalink" href="index.html#GetAllConceptSynonyms">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetAllConceptSynonyms(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetAllConcepts">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/concept.go?s=879:960#L23">GetAllConcepts</a>
+				<a class="permalink" href="index.html#GetAllConcepts">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetAllConcepts(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetAllConditionEras">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/condition_era.go?s=935:1021#L19">GetAllConditionEras</a>
+				<a class="permalink" href="index.html#GetAllConditionEras">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetAllConditionEras(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetAllConditionOccurrences">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/condition_occurrence.go?s=1089:1182#L19">GetAllConditionOccurrences</a>
+				<a class="permalink" href="index.html#GetAllConditionOccurrences">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetAllConditionOccurrences(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetAllCosts">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/cost.go?s=759:837#L19">GetAllCosts</a>
+				<a class="permalink" href="index.html#GetAllCosts">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetAllCosts(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetAllDeviceExposures">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/device_exposure.go?s=979:1067#L19">GetAllDeviceExposures</a>
+				<a class="permalink" href="index.html#GetAllDeviceExposures">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetAllDeviceExposures(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetAllDomains">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/domain.go?s=803:883#L19">GetAllDomains</a>
+				<a class="permalink" href="index.html#GetAllDomains">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetAllDomains(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetAllDoseEras">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/dose_era.go?s=825:906#L19">GetAllDoseEras</a>
+				<a class="permalink" href="index.html#GetAllDoseEras">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetAllDoseEras(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetAllDrugEras">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/drug_era.go?s=825:906#L19">GetAllDrugEras</a>
+				<a class="permalink" href="index.html#GetAllDrugEras">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetAllDrugEras(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetAllDrugExposures">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/drug_exposure.go?s=935:1021#L19">GetAllDrugExposures</a>
+				<a class="permalink" href="index.html#GetAllDrugExposures">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetAllDrugExposures(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetAllDrugStrengths">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/drug_strength.go?s=935:1021#L19">GetAllDrugStrengths</a>
+				<a class="permalink" href="index.html#GetAllDrugStrengths">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetAllDrugStrengths(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetAllFactRelationships">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/fact_relationship.go?s=1023:1113#L19">GetAllFactRelationships</a>
+				<a class="permalink" href="index.html#GetAllFactRelationships">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetAllFactRelationships(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetAllLocationHistories">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/location_history.go?s=1015:1105#L19">GetAllLocationHistories</a>
+				<a class="permalink" href="index.html#GetAllLocationHistories">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetAllLocationHistories(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetAllLocations">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/location.go?s=847:929#L19">GetAllLocations</a>
+				<a class="permalink" href="index.html#GetAllLocations">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetAllLocations(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetAllMeasurements">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/measurement.go?s=913:998#L19">GetAllMeasurements</a>
+				<a class="permalink" href="index.html#GetAllMeasurements">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetAllMeasurements(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetAllMetadata">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/metadatum.go?s=841:922#L19">GetAllMetadata</a>
+				<a class="permalink" href="index.html#GetAllMetadata">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetAllMetadata(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetAllNoteNlps">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/note_nlp.go?s=825:906#L19">GetAllNoteNlps</a>
+				<a class="permalink" href="index.html#GetAllNoteNlps">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetAllNoteNlps(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetAllNotes">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/note.go?s=759:837#L19">GetAllNotes</a>
+				<a class="permalink" href="index.html#GetAllNotes">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetAllNotes(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetAllObservationPeriods">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/observation_period.go?s=1045:1136#L19">GetAllObservationPeriods</a>
+				<a class="permalink" href="index.html#GetAllObservationPeriods">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetAllObservationPeriods(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetAllObservations">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/observation.go?s=913:998#L19">GetAllObservations</a>
+				<a class="permalink" href="index.html#GetAllObservations">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetAllObservations(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetAllPayerPlanPeriods">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/payer_plan_period.go?s=1001:1090#L19">GetAllPayerPlanPeriods</a>
+				<a class="permalink" href="index.html#GetAllPayerPlanPeriods">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetAllPayerPlanPeriods(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetAllPeople">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/person.go?s=789:868#L19">GetAllPeople</a>
+				<a class="permalink" href="index.html#GetAllPeople">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetAllPeople(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetAllProcedureOccurrences">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/procedure_occurrence.go?s=1089:1182#L19">GetAllProcedureOccurrences</a>
+				<a class="permalink" href="index.html#GetAllProcedureOccurrences">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetAllProcedureOccurrences(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetAllProviders">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/provider.go?s=847:929#L19">GetAllProviders</a>
+				<a class="permalink" href="index.html#GetAllProviders">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetAllProviders(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetAllRelationships">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/relationship.go?s=935:1021#L19">GetAllRelationships</a>
+				<a class="permalink" href="index.html#GetAllRelationships">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetAllRelationships(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetAllSourceToConceptMaps">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/source_to_concept_map.go?s=1067:1159#L19">GetAllSourceToConceptMaps</a>
+				<a class="permalink" href="index.html#GetAllSourceToConceptMaps">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetAllSourceToConceptMaps(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetAllSpecimen">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/speciman.go?s=833:914#L19">GetAllSpecimen</a>
+				<a class="permalink" href="index.html#GetAllSpecimen">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetAllSpecimen(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetAllSurveyConducts">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/survey_conduct.go?s=957:1044#L19">GetAllSurveyConducts</a>
+				<a class="permalink" href="index.html#GetAllSurveyConducts">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetAllSurveyConducts(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetAllVisitDetails">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/visit_detail.go?s=913:998#L19">GetAllVisitDetails</a>
+				<a class="permalink" href="index.html#GetAllVisitDetails">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetAllVisitDetails(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetAllVisitOccurrences">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/visit_occurrence.go?s=1001:1090#L19">GetAllVisitOccurrences</a>
+				<a class="permalink" href="index.html#GetAllVisitOccurrences">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetAllVisitOccurrences(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetAllVocabularies">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/vocabulary.go?s=905:990#L19">GetAllVocabularies</a>
+				<a class="permalink" href="index.html#GetAllVocabularies">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetAllVocabularies(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetAttributeDefinition">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/attribute_definition.go?s=2047:2136#L56">GetAttributeDefinition</a>
+				<a class="permalink" href="index.html#GetAttributeDefinition">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetAttributeDefinition(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetCareSite">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/care_site.go?s=1673:1751#L56">GetCareSite</a>
+				<a class="permalink" href="index.html#GetCareSite">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetCareSite(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetCdmSource">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/cdm_source.go?s=1707:1786#L56">GetCdmSource</a>
+				<a class="permalink" href="index.html#GetCdmSource">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetCdmSource(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetConcept">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/concept.go?s=1693:1770#L60">GetConcept</a>
+				<a class="permalink" href="index.html#GetConcept">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetConcept(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetConceptAncestor">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/concept_ancestor.go?s=1911:1996#L56">GetConceptAncestor</a>
+				<a class="permalink" href="index.html#GetConceptAncestor">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetConceptAncestor(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetConceptClass">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/concept_class.go?s=1833:1915#L56">GetConceptClass</a>
+				<a class="permalink" href="index.html#GetConceptClass">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetConceptClass(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetConceptRelationship">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/concept_relationship.go?s=2047:2136#L56">GetConceptRelationship</a>
+				<a class="permalink" href="index.html#GetConceptRelationship">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetConceptRelationship(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetConceptSynonym">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/concept_synonym.go?s=1877:1961#L56">GetConceptSynonym</a>
+				<a class="permalink" href="index.html#GetConceptSynonym">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetConceptSynonym(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetConditionEra">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/condition_era.go?s=1809:1891#L56">GetConditionEra</a>
+				<a class="permalink" href="index.html#GetConditionEra">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetConditionEra(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetConditionOccurrence">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/condition_occurrence.go?s=2047:2136#L56">GetConditionOccurrence</a>
+				<a class="permalink" href="index.html#GetConditionOccurrence">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetConditionOccurrence(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetCost">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/cost.go?s=1537:1611#L56">GetCost</a>
+				<a class="permalink" href="index.html#GetCost">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetCost(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetDeviceExposure">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/device_exposure.go?s=1877:1961#L56">GetDeviceExposure</a>
+				<a class="permalink" href="index.html#GetDeviceExposure">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetDeviceExposure(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetDomain">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/domain.go?s=1605:1681#L56">GetDomain</a>
+				<a class="permalink" href="index.html#GetDomain">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetDomain(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetDoseEra">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/dose_era.go?s=1639:1716#L56">GetDoseEra</a>
+				<a class="permalink" href="index.html#GetDoseEra">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetDoseEra(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetDrugEra">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/drug_era.go?s=1639:1716#L56">GetDrugEra</a>
+				<a class="permalink" href="index.html#GetDrugEra">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetDrugEra(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetDrugExposure">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/drug_exposure.go?s=1809:1891#L56">GetDrugExposure</a>
+				<a class="permalink" href="index.html#GetDrugExposure">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetDrugExposure(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetDrugStrength">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/drug_strength.go?s=1809:1891#L56">GetDrugStrength</a>
+				<a class="permalink" href="index.html#GetDrugStrength">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetDrugStrength(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetFactRelationship">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/fact_relationship.go?s=1945:2031#L56">GetFactRelationship</a>
+				<a class="permalink" href="index.html#GetFactRelationship">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetFactRelationship(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetLocation">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/location.go?s=1673:1751#L56">GetLocation</a>
+				<a class="permalink" href="index.html#GetLocation">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetLocation(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetLocationHistory">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/location_history.go?s=1935:2020#L56">GetLocationHistory</a>
+				<a class="permalink" href="index.html#GetLocationHistory">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetLocationHistory(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetMeasurement">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/measurement.go?s=1775:1856#L56">GetMeasurement</a>
+				<a class="permalink" href="index.html#GetMeasurement">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetMeasurement(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetMetadatum">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/metadatum.go?s=1659:1738#L56">GetMetadatum</a>
+				<a class="permalink" href="index.html#GetMetadatum">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetMetadatum(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetNameForTest">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/concept.go?s=176:204#L3">GetNameForTest</a>
+				<a class="permalink" href="index.html#GetNameForTest">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetNameForTest() <a href="http://localhost:8085/pkg/builtin/#string">string</a></pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetNote">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/note.go?s=1537:1611#L56">GetNote</a>
+				<a class="permalink" href="index.html#GetNote">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetNote(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetNoteNlp">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/note_nlp.go?s=1639:1716#L56">GetNoteNlp</a>
+				<a class="permalink" href="index.html#GetNoteNlp">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetNoteNlp(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetObservation">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/observation.go?s=1775:1856#L56">GetObservation</a>
+				<a class="permalink" href="index.html#GetObservation">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetObservation(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetObservationPeriod">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/observation_period.go?s=1979:2066#L56">GetObservationPeriod</a>
+				<a class="permalink" href="index.html#GetObservationPeriod">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetObservationPeriod(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetPayerPlanPeriod">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/payer_plan_period.go?s=1911:1996#L56">GetPayerPlanPeriod</a>
+				<a class="permalink" href="index.html#GetPayerPlanPeriod">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetPayerPlanPeriod(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetPerson">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/person.go?s=1581:1657#L56">GetPerson</a>
+				<a class="permalink" href="index.html#GetPerson">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetPerson(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetProcedureOccurrence">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/procedure_occurrence.go?s=2047:2136#L56">GetProcedureOccurrence</a>
+				<a class="permalink" href="index.html#GetProcedureOccurrence">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetProcedureOccurrence(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetProvider">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/provider.go?s=1673:1751#L56">GetProvider</a>
+				<a class="permalink" href="index.html#GetProvider">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetProvider(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetRelationship">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/relationship.go?s=1809:1891#L56">GetRelationship</a>
+				<a class="permalink" href="index.html#GetRelationship">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetRelationship(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetSourceToConceptMap">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/source_to_concept_map.go?s=2013:2101#L56">GetSourceToConceptMap</a>
+				<a class="permalink" href="index.html#GetSourceToConceptMap">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetSourceToConceptMap(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetSpeciman">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/speciman.go?s=1649:1727#L56">GetSpeciman</a>
+				<a class="permalink" href="index.html#GetSpeciman">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetSpeciman(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetSurveyConduct">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/survey_conduct.go?s=1843:1926#L56">GetSurveyConduct</a>
+				<a class="permalink" href="index.html#GetSurveyConduct">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetSurveyConduct(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetVisitDetail">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/visit_detail.go?s=1775:1856#L56">GetVisitDetail</a>
+				<a class="permalink" href="index.html#GetVisitDetail">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetVisitDetail(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetVisitOccurrence">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/visit_occurrence.go?s=1911:1996#L56">GetVisitOccurrence</a>
+				<a class="permalink" href="index.html#GetVisitOccurrence">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetVisitOccurrence(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetVocabulary">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/vocabulary.go?s=1765:1845#L56">GetVocabulary</a>
+				<a class="permalink" href="index.html#GetVocabulary">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetVocabulary(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="UpdateAttributeDefinition">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/attribute_definition.go?s=2790:2882#L82">UpdateAttributeDefinition</a>
+				<a class="permalink" href="index.html#UpdateAttributeDefinition">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UpdateAttributeDefinition(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="UpdateCareSite">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/care_site.go?s=2295:2376#L82">UpdateCareSite</a>
+				<a class="permalink" href="index.html#UpdateCareSite">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UpdateCareSite(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="UpdateCdmSource">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/cdm_source.go?s=2340:2422#L82">UpdateCdmSource</a>
+				<a class="permalink" href="index.html#UpdateCdmSource">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UpdateCdmSource(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="UpdateConcept">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/concept.go?s=2304:2384#L86">UpdateConcept</a>
+				<a class="permalink" href="index.html#UpdateConcept">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UpdateConcept(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="UpdateConceptAncestor">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/concept_ancestor.go?s=2610:2698#L82">UpdateConceptAncestor</a>
+				<a class="permalink" href="index.html#UpdateConceptAncestor">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UpdateConceptAncestor(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="UpdateConceptClass">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/concept_class.go?s=2499:2584#L82">UpdateConceptClass</a>
+				<a class="permalink" href="index.html#UpdateConceptClass">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UpdateConceptClass(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="UpdateConceptRelationship">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/concept_relationship.go?s=2790:2882#L82">UpdateConceptRelationship</a>
+				<a class="permalink" href="index.html#UpdateConceptRelationship">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UpdateConceptRelationship(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="UpdateConceptSynonym">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/concept_synonym.go?s=2565:2652#L82">UpdateConceptSynonym</a>
+				<a class="permalink" href="index.html#UpdateConceptSynonym">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UpdateConceptSynonym(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="UpdateConditionEra">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/condition_era.go?s=2475:2560#L82">UpdateConditionEra</a>
+				<a class="permalink" href="index.html#UpdateConditionEra">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UpdateConditionEra(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="UpdateConditionOccurrence">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/condition_occurrence.go?s=2790:2882#L82">UpdateConditionOccurrence</a>
+				<a class="permalink" href="index.html#UpdateConditionOccurrence">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UpdateConditionOccurrence(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="UpdateCost">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/cost.go?s=2115:2192#L82">UpdateCost</a>
+				<a class="permalink" href="index.html#UpdateCost">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UpdateCost(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="UpdateDeviceExposure">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/device_exposure.go?s=2565:2652#L82">UpdateDeviceExposure</a>
+				<a class="permalink" href="index.html#UpdateDeviceExposure">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UpdateDeviceExposure(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="UpdateDomain">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/domain.go?s=2205:2284#L82">UpdateDomain</a>
+				<a class="permalink" href="index.html#UpdateDomain">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UpdateDomain(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="UpdateDoseEra">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/dose_era.go?s=2250:2330#L82">UpdateDoseEra</a>
+				<a class="permalink" href="index.html#UpdateDoseEra">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UpdateDoseEra(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="UpdateDrugEra">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/drug_era.go?s=2250:2330#L82">UpdateDrugEra</a>
+				<a class="permalink" href="index.html#UpdateDrugEra">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UpdateDrugEra(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="UpdateDrugExposure">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/drug_exposure.go?s=2475:2560#L82">UpdateDrugExposure</a>
+				<a class="permalink" href="index.html#UpdateDrugExposure">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UpdateDrugExposure(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="UpdateDrugStrength">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/drug_strength.go?s=2475:2560#L82">UpdateDrugStrength</a>
+				<a class="permalink" href="index.html#UpdateDrugStrength">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UpdateDrugStrength(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="UpdateFactRelationship">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/fact_relationship.go?s=2655:2744#L82">UpdateFactRelationship</a>
+				<a class="permalink" href="index.html#UpdateFactRelationship">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UpdateFactRelationship(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="UpdateLocation">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/location.go?s=2295:2376#L82">UpdateLocation</a>
+				<a class="permalink" href="index.html#UpdateLocation">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UpdateLocation(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="UpdateLocationHistory">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/location_history.go?s=2634:2722#L82">UpdateLocationHistory</a>
+				<a class="permalink" href="index.html#UpdateLocationHistory">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UpdateLocationHistory(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="UpdateMeasurement">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/measurement.go?s=2430:2514#L82">UpdateMeasurement</a>
+				<a class="permalink" href="index.html#UpdateMeasurement">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UpdateMeasurement(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="UpdateMetadatum">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/metadatum.go?s=2292:2374#L82">UpdateMetadatum</a>
+				<a class="permalink" href="index.html#UpdateMetadatum">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UpdateMetadatum(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="UpdateNote">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/note.go?s=2115:2192#L82">UpdateNote</a>
+				<a class="permalink" href="index.html#UpdateNote">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UpdateNote(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="UpdateNoteNlp">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/note_nlp.go?s=2250:2330#L82">UpdateNoteNlp</a>
+				<a class="permalink" href="index.html#UpdateNoteNlp">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UpdateNoteNlp(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="UpdateObservation">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/observation.go?s=2430:2514#L82">UpdateObservation</a>
+				<a class="permalink" href="index.html#UpdateObservation">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UpdateObservation(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="UpdateObservationPeriod">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/observation_period.go?s=2700:2790#L82">UpdateObservationPeriod</a>
+				<a class="permalink" href="index.html#UpdateObservationPeriod">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UpdateObservationPeriod(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="UpdatePayerPlanPeriod">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/payer_plan_period.go?s=2610:2698#L82">UpdatePayerPlanPeriod</a>
+				<a class="permalink" href="index.html#UpdatePayerPlanPeriod">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UpdatePayerPlanPeriod(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="UpdatePerson">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/person.go?s=2181:2260#L82">UpdatePerson</a>
+				<a class="permalink" href="index.html#UpdatePerson">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UpdatePerson(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="UpdateProcedureOccurrence">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/procedure_occurrence.go?s=2790:2882#L82">UpdateProcedureOccurrence</a>
+				<a class="permalink" href="index.html#UpdateProcedureOccurrence">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UpdateProcedureOccurrence(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="UpdateProvider">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/provider.go?s=2295:2376#L82">UpdateProvider</a>
+				<a class="permalink" href="index.html#UpdateProvider">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UpdateProvider(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="UpdateRelationship">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/relationship.go?s=2475:2560#L82">UpdateRelationship</a>
+				<a class="permalink" href="index.html#UpdateRelationship">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UpdateRelationship(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="UpdateSourceToConceptMap">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/source_to_concept_map.go?s=2745:2836#L82">UpdateSourceToConceptMap</a>
+				<a class="permalink" href="index.html#UpdateSourceToConceptMap">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UpdateSourceToConceptMap(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="UpdateSpeciman">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/speciman.go?s=2271:2352#L82">UpdateSpeciman</a>
+				<a class="permalink" href="index.html#UpdateSpeciman">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UpdateSpeciman(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="UpdateSurveyConduct">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/survey_conduct.go?s=2520:2606#L82">UpdateSurveyConduct</a>
+				<a class="permalink" href="index.html#UpdateSurveyConduct">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UpdateSurveyConduct(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="UpdateVisitDetail">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/visit_detail.go?s=2430:2514#L82">UpdateVisitDetail</a>
+				<a class="permalink" href="index.html#UpdateVisitDetail">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UpdateVisitDetail(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="UpdateVisitOccurrence">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/visit_occurrence.go?s=2610:2698#L82">UpdateVisitOccurrence</a>
+				<a class="permalink" href="index.html#UpdateVisitOccurrence">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UpdateVisitOccurrence(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="UpdateVocabulary">func <a href="http://localhost:8085/src/github.com/E-Health/gocdm/api/vocabulary.go?s=2409:2492#L82">UpdateVocabulary</a>
+				<a class="permalink" href="index.html#UpdateVocabulary">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UpdateVocabulary(w <a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#ResponseWriter">ResponseWriter</a>, r *<a href="http://localhost:8085/pkg/net/http/">http</a>.<a href="http://localhost:8085/pkg/net/http/#Request">Request</a>, ps <a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/">httprouter</a>.<a href="http://localhost:8085/pkg/github.com/julienschmidt/httprouter/#Params">Params</a>)</pre>
+			
+			
+			
+
+		
+		
+	
+
+	
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.14.2.<br>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>
