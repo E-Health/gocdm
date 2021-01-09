@@ -1,5 +1,8 @@
 # GOCDM 6.0 
 
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg) **for OHDSI** ](https://www.ohdsi.org/)
+
+
 ## Description
 
 The [OHSDI](https://www.ohdsi.org/) OMOP Common Data Model allows for the systematic analysis of healthcare observational databases. This is a Golang library to use the CDM v6 compliant databases.
@@ -17,17 +20,8 @@ The [OHSDI](https://www.ohdsi.org/) OMOP Common Data Model allows for the system
 
 ### [documentation](https://e-health.github.io/gocdm/pkg/github.com/E-Health/gocdm/)
 
-### APIs (example for Person)
-
-* GET /people
-* POST /people
-* GET /people/:id
-* POST /people/:id
-* PUT /people/:id
-* DELETE /people/:id
-
 ## Contributors
 
 * PR Welcome: see CONTRIBUTING.md
 
-* [Bell Eapen](https://nuchange.ca)
+* [Bell Eapen](https://nuchange.ca) | [![Twitter Follow](https://img.shields.io/twitter/follow/beapen?style=social)](https://twitter.com/beapen)
